@@ -1,0 +1,962 @@
+GAN You Do the GAN GAN?
+Loss-Sensitive Generative Adversarial Networks on Lipschitz Densities
+From GAN to WGAN
+Conditional GANs For Painting Generation
+KG-GAN: Knowledge-Guided Generative Adversarial Networks
+MD-GAN: Multi-Discriminator Generative Adversarial Networks for
+  Distributed Datasets
+Compressing GANs using Knowledge Distillation
+Spectral Regularization for Combating Mode Collapse in GANs
+Bayesian Conditional Generative Adverserial Networks
+Semi-Supervised Learning with IPM-based GANs: an Empirical Study
+Semi-Supervised Learning with GANs: Revisiting Manifold Regularization
+Color Constancy by GANs: An Experimental Survey
+GANspection
+Interfacial Thermal Conductance across Room-Temperature Bonded
+  GaN-Diamond Interfaces for GaN-on-Diamond Devices
+Subsampling Generative Adversarial Networks: Density Ratio Estimation in
+  Feature Space with Softplus Loss
+Softmax GAN
+Fisher GAN
+Gradient descent GAN optimization is locally stable
+Attributing Fake Images to GANs: Learning and Analyzing GAN Fingerprints
+Variational Hetero-Encoder Randomized GANs for Joint Image-Text Modeling
+SPA-GAN: Spatial Attention GAN for Image-to-Image Translation
+Point Cloud GAN
+Class-Distinct and Class-Mutual Image Generation with GANs
+Energetics and magnetism of Co-doped GaN(0001) surfaces: A
+  first-principles stud
+Adversarial Training For Sketch Retrieval
+Ensembles of Generative Adversarial Networks
+Evolutionary Generative Adversarial Networks
+Fast-converging Conditional Generative Adversarial Networks for Image
+  Synthesis
+Wasserstein GAN Can Perform PCA
+Latent Code and Text-based Generative Adversarial Networks for Soft-text
+  Generation
+FCC-GAN: A Fully Connected and Convolutional Net Architecture for GANs
+Exploring Bias in GAN-based Data Augmentation for Small Samples
+Detecting and Simulating Artifacts in GAN Fake Images
+Coupled Generative Adversarial Network for Continuous Fine-grained
+  Action Segmentation
+Bootstrapping Conditional GANs for Video Game Level Generation
+Seeing What a GAN Cannot Generate
+NIPS 2016 Tutorial: Generative Adversarial Networks
+Efficient GAN-Based Anomaly Detection
+Language Modeling with Generative Adversarial Networks
+Manifold regularization with GANs for semi-supervised learning
+Improving Generalization and Stability of Generative Adversarial
+  Networks
+Exposing GAN-synthesized Faces Using Landmark Locations
+A Survey on GANs for Anomaly Detection
+Visual Indeterminacy in Generative Neural Art
+MMD GAN: Towards Deeper Understanding of Moment Matching Network
+Coulomb GANs: Provably Optimal Nash Equilibria via Potential Fields
+Generative Adversarial Nets for Information Retrieval: Fundamentals and
+  Advances
+IAN: Combining Generative Adversarial Networks for Imaginative Face
+  Generation
+Generative Adversarial Networks: A Survey and Taxonomy
+Twin Auxiliary Classifiers GAN
+Deconstructing Generative Adversarial Networks
+High Thermal Boundary Conductance across Bonded Heterogeneous GaN-SiC
+  Interfaces
+GaN/AlGaN microcavities for enhancement of non linear optical effects
+Face Super-Resolution Through Wasserstein GANs
+An Online Learning Approach to Generative Adversarial Networks
+Dualing GANs
+On the Limitations of First-Order Approximation in GAN Dynamics
+Effect of Tensile Strain in GaN Layer on the Band Offsets and 2DEG
+  Density in AlGaN/GaN Heterostructures
+Fictitious GAN: Training GANs with Historical Models
+Generate the corresponding Image from Text Description using Modified
+  GAN-CLS Algorithm
+Convergence Problems with Generative Adversarial Networks (GANs)
+How good is my GAN?
+Self-Supervised GAN to Counter Forgetting
+Evaluating Text GANs as Language Models
+Detecting GAN-generated Imagery using Color Cues
+QGAN: Quantized Generative Adversarial Networks
+(q,p)-Wasserstein GANs: Comparing Ground Metrics for Wasserstein GANs
+Laser slicing: a thin film lift-off method for GaN-on-GaN technology
+Label-Removed Generative Adversarial Networks Incorporating with K-Means
+Fence GAN: Towards Better Anomaly Detection
+Constrained Generative Adversarial Networks for Interactive Image
+  Generation
+Poly-GAN: Multi-Conditioned GAN for Fashion Synthesis
+Image Generation and Recognition (Emotions)
+Learning GANs and Ensembles Using Discrepancy
+Bridging the Gap Between $f$-GANs and Wasserstein GANs
+DomainGAN: Generating Adversarial Examples to Attack Domain Generation
+  Algorithm Classifiers
+How Generative Adversarial Networks and Their Variants Work: An Overview
+Semantic-aware Grad-GAN for Virtual-to-Real Urban Scene Adaption
+High Quality Bidirectional Generative Adversarial Networks
+Entropic GANs meet VAEs: A Statistical Approach to Compute Sample
+  Likelihoods in GANs
+GAN Dissection: Visualizing and Understanding Generative Adversarial
+  Networks
+Label-Noise Robust Generative Adversarial Networks
+Virtual Conditional Generative Adversarial Networks
+AT-GAN: A Generative Attack Model for Adversarial Transferring on
+  Generative Adversarial Nets
+RL-GAN-Net: A Reinforcement Learning Agent Controlled GAN Network for
+  Real-Time Point Cloud Shape Completion
+McGan: Mean and Covariance Feature Matching GAN
+Improving GANs Using Optimal Transport
+Variational Inference: A Unified Framework of Generative Models and Some
+  Revelations
+Out-of-Sample Testing for GANs
+Semi-supervised GANs to Infer Travel Modes in GPS Trajectories
+Silicon Nitride Stress Liner Impacts on the Electrical Characteristics
+  of AlGaN/GaN HEMTs
+3D Semantic Scene Completion from a Single Depth Image using Adversarial
+  Training
+S-Flow GAN
+Evaluating the distribution learning capabilities of GANs
+Comparison of Generative Adversarial Networks Architectures Which Reduce
+  Mode Collapse
+Few-Features Attack to Fool Machine Learning Models through Mask-Based
+  GAN
+Gang of GANs: Generative Adversarial Networks with Maximum Margin
+  Ranking
+GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash
+  Equilibrium
+Generative Semantic Manipulation with Contrasting GAN
+A Classification-Based Study of Covariate Shift in GAN Distributions
+Which Training Methods for GANs do actually Converge?
+Memorization Precedes Generation: Learning Unsupervised GANs with Memory
+  Networks
+GAN Lab: Understanding Complex Deep Generative Models using Interactive
+  Visual Experimentation
+Non-Adversarial Image Synthesis with Generative Latent Nearest Neighbors
+Visualizing and Understanding Generative Adversarial Networks (Extended
+  Abstract)
+Quality Evaluation of GANs Using Cross Local Intrinsic Dimensionality
+A Survey and Taxonomy of Adversarial Neural Networks for Text-to-Image
+  Synthesis
+Least Squares Generative Adversarial Networks
+Generalization and Equilibrium in Generative Adversarial Nets (GANs)
+DeLiGAN : Generative Adversarial Networks for Diverse and Limited Data
+Learning Graph Topological Features via GAN
+Exploring Speech Enhancement with Generative Adversarial Networks for
+  Robust Speech Recognition
+Improved Training of Generative Adversarial Networks Using
+  Representative Features
+Training Generative Adversarial Networks via Primal-Dual Subgradient
+  Methods: A Lagrangian Perspective on GAN
+Inverting The Generator Of A Generative Adversarial Network (II)
+ST-GAN: Spatial Transformer Generative Adversarial Networks for Image
+  Compositing
+Generative Adversarial Networks (GANs): What it can generate and What it
+  cannot?
+On Catastrophic Forgetting and Mode Collapse in Generative Adversarial
+  Networks
+Towards Distributed Coevolutionary GANs
+Paired 3D Model Generation with Conditional Generative Adversarial
+  Networks
+Effect of Polarization Field on the Photocurrent Characteristics of
+  GaN/AlN Multi-Quantum-Well Avalanche Photodiode
+ClusterGAN : Latent Space Clustering in Generative Adversarial Networks
+Incorporating GAN for Negative Sampling in Knowledge Representation
+  Learning
+GAN-QP: A Novel GAN Framework without Gradient Vanishing and Lipschitz
+  Constraint
+Stackelberg GAN: Towards Provable Minimax Equilibrium via
+  Multi-Generator Architectures
+Conditional Video Generation Using Action-Appearance Captions
+Spatial Fusion GAN for Image Synthesis
+Evaluating Generative Adversarial Networks on Explicitly Parameterized
+  Distributions
+On Computation and Generalization of GANs with Spectrum Control
+Progressive Augmentation of GANs
+Perturbative GAN: GAN with Perturbation Layers
+Yes, we GAN: Applying Adversarial Techniques for Autonomous Driving
+Teaching GANs to Sketch in Vector Format
+3D Point Cloud Generative Adversarial Network Based on Tree Structured
+  Graph Convolutions
+Semi-supervised learning based on generative adversarial network: a
+  comparison between good GAN and bad GAN approach
+Improving Detection of Credit Card Fraudulent Transactions using
+  Generative Adversarial Networks
+Affine Disentangled GAN for Interpretable and Robust AV Perception
+City-GAN: Learning architectural styles using a custom Conditional GAN
+  architecture
+Deep unsupervised learning of turbulence for inflow generation at
+  various Reynolds numbers
+"Best-of-Many-Samples" Distribution Matching
+Understanding and Stabilizing GANs' Training Dynamics with Control
+  Theory
+Stabilizing Generative Adversarial Network Training: A Survey
+Connections between Support Vector Machines, Wasserstein distance and
+  gradient-penalty GANs
+Semi-supervised Learning using Adversarial Training with Good and Bad
+  Samples
+Quality Aware Generative Adversarial Networks
+Multi-Agent Diverse Generative Adversarial Networks
+DualGAN: Unsupervised Dual Learning for Image-to-Image Translation
+CM-GANs: Cross-modal Generative Adversarial Networks for Common
+  Representation Learning
+Investigating Generative Adversarial Networks based Speech
+  Dereverberation for Robust Speech Recognition
+Generative Adversarial Image Synthesis with Decision Tree Latent
+  Controller
+On GANs and GMMs
+Demonstration of nonpolar m-plane vertical GaN-on-GaN p-n power diodes
+  grown on free-standing GaN substrates
+Generative Adversarial Networks with Decoder-Encoder Output Noise
+Gaussian Mixture Generative Adversarial Networks for Diverse Datasets,
+  and the Unsupervised Clustering of Images
+A Convex Duality Framework for GANs
+Generalizing semi-supervised generative adversarial networks to
+  regression using feature contrasting
+Generative Adversarial Networks (GAN) for compact beam source modelling
+  in Monte Carlo simulations
+The importance of evaluating the complete automated knowledge-based
+  planning pipeline
+Message Passing Multi-Agent GANs
+Improved Training of Wasserstein GANs
+The Numerics of GANs
+On Unifying Deep Generative Models
+Statistical Parametric Speech Synthesis Using Generative Adversarial
+  Networks Under A Multi-task Learning Framework
+Controllable Generative Adversarial Network
+Summable Reparameterizations of Wasserstein Critics in the
+  One-Dimensional Setting
+A Novel Approach to Artistic Textual Visualization via GAN
+Theoretical limitations of Encoder-Decoder GAN architectures
+Restricting Greed in Training of Generative Adversarial Network
+Improving Video Generation for Multi-functional Applications
+Deep Interactive Evolution
+Pros and Cons of GAN Evaluation Measures
+Selecting the Best in GANs Family: a Post Selection Inference Framework
+Differentially Private Generative Adversarial Network
+On the Convergence and Robustness of Training GANs with Regularized
+  Optimal Transport
+MAGAN: Aligning Biological Manifolds
+Quantitatively Evaluating GANs With Divergences Proposed for Training
+An Introduction to Image Synthesis with Generative Adversarial Nets
+BAGAN: Data Augmentation with Balancing GAN
+Generative Modeling using the Sliced Wasserstein Distance
+Graphical Generative Adversarial Networks
+Text to Image Synthesis Using Generative Adversarial Networks
+Generative Adversarial Networks for Unsupervised Object Co-localization
+Disconnected Manifold Learning for Generative Adversarial Networks
+CapsGAN: Using Dynamic Routing for Generative Adversarial Networks
+On Accurate Evaluation of GANs for Language Generation
+On Enhancing Speech Emotion Recognition using Generative Adversarial
+  Networks
+Beyond Local Nash Equilibria for Adversarial Networks
+Privacy-Protective-GAN for Face De-identification
+A Large-Scale Study on Regularization and Normalization in GANs
+Conditional Infilling GANs for Data Augmentation in Mammogram
+  Classification
+Distributional Multivariate Policy Evaluation and Exploration with the
+  Bellman GAN
+Generating Text through Adversarial Training using Skip-Thought Vectors
+Adversarial Text Generation via Feature-Mover's Distance
+Learning to Detect Fake Face Images in the Wild
+Discovering state-parameter mappings in subsurface models using
+  generative adversarial networks
+ProstateGAN: Mitigating Data Bias via Prostate Diffusion Imaging
+  Synthesis with Generative Adversarial Networks
+Four-wave mixing and nonlinear parameter measurement in a
+  gallium-nitride ridge waveguide
+MR-GAN: Manifold Regularized Generative Adversarial Networks
+Self-Supervised GANs via Auxiliary Rotation Loss
+GAN-EM: GAN based EM learning framework
+General-to-Detailed GAN for Infrequent Class Medical Images
+Do GANs leave artificial fingerprints?
+Dual Generator Generative Adversarial Networks for Multi-Domain
+  Image-to-Image Translation
+Quantifying Temperature-dependent Substrate Loss in GaN-on-Si RF
+  Technology
+Generative Adversarial Network with Multi-Branch Discriminator for
+  Cross-Species Image-to-Image Translation
+Quick and Easy Time Series Generation with Established Image-based GANs
+Data augmentation for low resource sentiment analysis using generative
+  adversarial networks
+Detecting GAN generated Fake Images using Co-occurrence Matrices
+MeshGAN: Non-linear 3D Morphable Models of Faces
+GANs-NQM: A Generative Adversarial Networks based No Reference Quality
+  Assessment Metric for RGB-D Synthesized Views
+Learning More with Less: GAN-based Medical Image Augmentation
+Adaptive Composition GAN towards Realistic Image Synthesis
+Training language GANs from Scratch
+G2R Bound: A Generalization Bound for Supervised Learning from
+  GAN-Synthetic Data
+Training Generative Adversarial Networks from Incomplete Observations
+  using Factorised Discriminators
+Mind2Mind : transfer learning for GANs
+Dual Adversarial Semantics-Consistent Network for Generalized Zero-Shot
+  Learning
+Virtual Adversarial Lipschitz Regularization
+HAD-GAN: A Human-perception Auxiliary Defense GAN to Defend Adversarial
+  Examples
+Implicit Discriminator in Variational Autoencoder
+Evolutionary Multi-Objective Optimization Driven by Generative
+  Adversarial Networks (GANs)
+Label-Conditioned Next-Frame Video Generation with Neural Flows
+Consistency Regularization for Generative Adversarial Networks
+Generative adversarial networks (GAN) based efficient sampling of
+  chemical space for inverse design of inorganic materials
+Novel Reconstruction mechanisms: A comparison between group-III-nitrides
+  and "traditional" III-V-semiconductors
+Radiation-Hard Opto-Link for the Atlas Pixel Detector
+Extraction of absorption coefficients from GaN nanowires grown on opaque
+  substrates
+Simulation of Enhancement Mode GaN HEMTs with Threshold > 5 V using
+  P-type Buffer
+Improved generator objectives for GANs
+Precise Recovery of Latent Vectors from Generative Adversarial Networks
+Megapixel Size Image Creation using Generative Adversarial Networks
+Can GAN Learn Topological Features of a Graph?
+Deep Generative Adversarial Neural Networks for Realistic Prostate
+  Lesion MRI Synthesis
+Neural Stain-Style Transfer Learning using GAN for Histopathological
+  Images
+Generative Adversarial Nets for Multiple Text Corpora
+Varying k-Lipschitz Constraint for Generative Adversarial Networks
+MGGAN: Solving Mode Collapse using Manifold Guided Training
+GAN Based Medical Image Registration
+High Diversity Attribute Guided Face Generation with GANs
+Improved Training with Curriculum GANs
+Twin-GAN -- Unpaired Cross-Domain Image Translation with Weight-Sharing
+  GANs
+Image Super-Resolution Using VDSR-ResNeXt and SRCGAN
+Finding Mixed Nash Equilibria of Generative Adversarial Networks
+Evaluating GANs via Duality
+On the Implicit Assumptions of GANs
+Training GANs with Centripetal Acceleration
+MisGAN: Learning from Incomplete Data with Generative Adversarial
+  Networks
+Limits of Deepfake Detection: A Robust Estimation Viewpoint
+Faster Unsupervised Semantic Inpainting: A GAN Based Approach
+TunaGAN: Interpretable GAN for Smart Editing
+Improving sample diversity of a pre-trained, class-conditional GAN by
+  changing its class embeddings
+SGD Learns One-Layer Networks in WGANs
+Fabrication of GaN/AlGaN 1D photonic crystals designed for nonlinear
+  optical applications
+A Connection between Generative Adversarial Networks, Inverse
+  Reinforcement Learning, and Energy-Based Models
+Recurrent Topic-Transition GAN for Visual Paragraph Generation
+Statistical Parametric Speech Synthesis Incorporating Generative
+  Adversarial Networks
+Image Generation from Sketch Constraint Using Contextual GAN
+Towards Quality Advancement of Underwater Machine Vision with Generative
+  Adversarial Networks
+Towards Realistic Face Photo-Sketch Synthesis via Composition-Aided GANs
+A Memristor based Unsupervised Neuromorphic System Towards Fast and
+  Energy-Efficient GAN
+Generative Adversarial Networks for Image-to-Image Translation on
+  Multi-Contrast MR Images - A Comparison of CycleGAN and UNIT
+Sem-GAN: Semantically-Consistent Image-to-Image Translation
+Rob-GAN: Generator, Discriminator, and Adversarial Attacker
+SiftingGAN: Generating and Sifting Labeled Samples to Improve the Remote
+  Sensing Image Scene Classification Baseline in vitro
+Style and Content Disentanglement in Generative Adversarial Networks
+Lipschitz Generative Adversarial Nets
+GAN-based Projector for Faster Recovery with Convergence Guarantees in
+  Linear Inverse Problems
+MSG-GAN: Multi-Scale Gradient GAN for Stable Image Synthesis
+Gated-GAN: Adversarial Gated Networks for Multi-Collection Style
+  Transfer
+Super-Resolved Image Perceptual Quality Improvement via Multi-Feature
+  Discriminators
+An Improved Self-supervised GAN via Adversarial Training
+Unsupervised Adversarial Attacks on Deep Feature-based Retrieval with
+  GAN
+Interpreting the Latent Space of GANs for Semantic Face Editing
+Data augmentation with Symbolic-to-Real Image Translation GANs for
+  Traffic Sign Recognition
+Visual-Relation Conscious Image Generation from Structured-Text
+Alleviating Feature Confusion for Generative Zero-shot Learning
+Generating Geological Facies Models with Fidelity to Diversity and
+  Statistics of Training Images using Improved Generative Adversarial Networks
+Conditional Transferring Features: Scaling GANs to Thousands of Classes
+  with 30% Less High-quality Data for Training
+Generative Adversarial Networks for Failure Prediction
+Knowledge-based automated planning with three-dimensional generative
+  adversarial networks
+MRI to CT Translation with GANs
+Multi-label Classification with Optimal Thresholding for
+  Multi-composition Spectroscopic Analysis
+Tuning linear and nonlinear optical properties of wurtzite GaN by
+  c-axial stress
+Integrated GaN photonic circuits on silicon (100) for second harmonic
+  generation
+Influence of oxygen in architecting large scale nonpolar GaN nanowires
+Generative Adversarial Networks in Estimation of Distribution Algorithms
+  for Combinatorial Optimization
+Full duplex communication using visible light
+Connecting Generative Adversarial Networks and Actor-Critic Methods
+Generative Multi-Adversarial Networks
+Face Aging With Conditional Generative Adversarial Networks
+TAC-GAN - Text Conditioned Auxiliary Classifier Generative Adversarial
+  Network
+Learning Inverse Mapping by Autoencoder based Generative Adversarial
+  Nets
+On Convergence and Stability of GANs
+Semi-supervised Learning with GANs: Manifold Invariance with Improved
+  Inference
+Flow-GAN: Combining Maximum Likelihood and Adversarial Learning in
+  Generative Models
+Learning to Generate Chairs with Generative Adversarial Nets
+AlignGAN: Learning to Align Cross-Domain Images with Conditional
+  Generative Adversarial Networks
+Generative Adversarial Networks: An Overview
+Metric Learning-based Generative Adversarial Network
+Faster Fuzzing: Reinitialization with Deep Neural Models
+Sobolev GAN
+IVE-GAN: Invariant Encoding Generative Adversarial Networks
+CatGAN: Coupled Adversarial Transfer for Domain Generation
+Generative Adversarial Networks for Electronic Health Records: A
+  Framework for Exploring and Evaluating Methods for Predicting Drug-Induced
+  Laboratory Test Trajectories
+Wasserstein Divergence for GANs
+Stochastic reconstruction of an oolitic limestone by generative
+  adversarial networks
+Context-Aware Semantic Inpainting
+Face Synthesis from Visual Attributes via Sketch using Conditional VAEs
+  and GANs
+No Modes left behind: Capturing the data distribution effectively using
+  GANs
+Geometry-Contrastive GAN for Facial Expression Transfer
+Robust GANs against Dishonest Adversaries
+A Variational Inequality Perspective on Generative Adversarial Networks
+Improving the Improved Training of Wasserstein GANs: A Consistency Term
+  and Its Dual Effect
+Correction by Projection: Denoising Images with Generative Adversarial
+  Networks
+Comparing Generative Adversarial Network Techniques for Image Creation
+  and Modification
+SyncGAN: Synchronize the Latent Space of Cross-modal Generative
+  Adversarial Networks
+Sobolev Descent
+Generative Adversarial Network Architectures For Image Synthesis Using
+  Capsule Networks
+Hierarchy of GANs for learning embodied self-awareness model
+Adversarial Learning with Local Coordinate Coding
+FrankenGAN: Guided Detail Synthesis for Building Mass-Models Using
+  Style-Synchonized GANs
+Learning Implicit Generative Models by Teaching Explicit Ones
+Deep Learning for Imbalance Data Classification using Class Expert
+  Generative Adversarial Network
+Airline Passenger Name Record Generation using Generative Adversarial
+  Networks
+Global Convergence to the Equilibrium of GANs using Variational
+  Inequalities
+Generating Highly Realistic Images of Skin Lesions with GANs
+Memory Replay GANs: learning to generate images from new categories
+  without forgetting
+Pseudo-Random Number Generation using Generative Adversarial Networks
+Generative Adversarial Network for Medical Images (MI-GAN)
+Training Generative Adversarial Networks with Binary Neurons by
+  End-to-end Backpropagation
+Generating Photo-Realistic Training Data to Improve Face Recognition
+  Accuracy
+Mixture Density Generative Adversarial Networks
+Student's t-Generative Adversarial Networks
+Imagining an Engineer: On GAN-Based Data Augmentation Perpetuating
+  Biases
+Intra-class Variation Isolation in Conditional GANs
+A Wasserstein GAN model with the total variational regularization
+Towards generative adversarial networks as a new paradigm for radiology
+  education
+Adversarially Learned Anomaly Detection
+RankGAN: A Maximum Margin Ranking GAN for Generating Faces
+Learning Spatial Pyramid Attentive Pooling in Image Synthesis and
+  Image-to-Image Translation
+DCNN-GAN: Reconstructing Realistic Image from fMRI
+Generating and Aligning from Data Geometries with Generative Adversarial
+  Networks
+On Detecting GANs and Retouching based Synthetic Alterations
+Achieving sub-1 Ohm-mm Non-Recess S/D Contact Resistance in GaN HEMTs
+  Utilizing Simple CMOS Compatible La/Ti/Al/Ti Metal Contacts
+Anomaly Detection with Adversarial Dual Autoencoders
+Enhancing the Robustness of Deep Neural Networks by Boundary Conditional
+  GAN
+On the generalization of GAN image forensics
+Bandwidth Extension on Raw Audio via Generative Adversarial Networks
+Auto-Embedding Generative Adversarial Networks for High Resolution Image
+  Synthesis
+Infinite Brain MR Images: PGGAN-based Data Augmentation for Tumor
+  Detection
+A Novel GAN-based Fault Diagnosis Approach for Imbalanced Industrial
+  Time Series
+Efficient GAN-based method for cyber-intrusion detection
+A New GAN-based End-to-End TTS Training Algorithm
+Max-Sliced Wasserstein Distance and its use for GANs
+An Introduction to Person Re-identification with Generative Adversarial
+  Networks
+Social Ways: Learning Multi-Modal Distributions of Pedestrian
+  Trajectories with GANs
+TextKD-GAN: Text Generation using KnowledgeDistillation and Generative
+  Adversarial Networks
+Disentangling GAN with One-Hot Sampling and Orthogonal Regularization
+Stabilizing GANs with Octave Convolutions
+Learning to Transfer: Unsupervised Meta Domain Translation
+On Stabilizing Generative Adversarial Training with Noise
+InfoGAN-CR: Disentangling Generative Adversarial Networks with
+  Contrastive Regularizers
+AGAN: Towards Automated Design of Generative Adversarial Networks
+SetGANs: Enforcing Distributional Accuracy in Generative Adversarial
+  Networks
+Recent Advances of Image Steganography with Generative Adversarial
+  Networks
+Pose-variant 3D Facial Attribute Generation
+PU-GAN: a Point Cloud Upsampling Adversarial Network
+Generative Image Inpainting with Submanifold Alignment
+Generalization in Generative Adversarial Networks: A Novel Perspective
+  from Privacy Protection
+Learning from Label Proportions with Generative Adversarial Networks
+Sampling Strategies for GAN Synthetic Data
+Fine-grained Action Segmentation using the Semi-Supervised Action GAN
+HumanGAN: generative adversarial network with human-based discriminator
+  and its evaluation in speech perception modeling
+Generating Relevant Counter-Examples from a Positive Unlabeled Dataset
+  for Image Classification
+Illegible Text to Readable Text: An Image-to-Image Transformation using
+  Conditional Sliced Wasserstein Adversarial Networks
+A Prior of a Googol Gaussians: a Tensor Ring Induced Prior for
+  Generative Models
+The relativistic discriminator: a key element missing from standard GAN
+Activation Maximization Generative Adversarial Nets
+Towards Large-Pose Face Frontalization in the Wild
+Supervised Adversarial Networks for Image Saliency Detection
+Adversarial Generation of Training Examples: Applications to Moving
+  Vehicle License Plate Recognition
+Bias-controlled spectral response in GaN/AlN single-nanowire ultraviolet
+  photodetectors
+Dist-GAN: An Improved GAN using Distance Constraints
+MelanoGANs: High Resolution Skin Lesion Synthesis with GANs
+MC-GAN: Multi-conditional Generative Adversarial Network for Image
+  Synthesis
+Approximability of Discriminators Implies Diversity in GANs
+Understanding the Effectiveness of Lipschitz-Continuity in Generative
+  Adversarial Nets
+High responsivity, low dark current ultraviolet photodetector based on
+  AlGaN/GaN interdigitated transducer
+FD-GAN: Pose-guided Feature Distilling GAN for Robust Person
+  Re-identification
+Improved Techniques for GAN based Facial Inpainting
+Soft-Gated Warping-GAN for Pose-Guided Person Image Synthesis
+Improving GAN with neighbors embedding and gradient matching
+On Hallucinating Context and Background Pixels from a Face Mask using
+  Multi-scale GANs
+Micro-Tesla Offset in Thermally Stable AlGaN/GaN 2DEG Hall-effect Plates
+  using Current Spinning
+Effect of Geometry on Sensitivity and Offset of AlGaN/GaN and InAlN/GaN
+  Hall-effect Sensors
+BiHMP-GAN: Bidirectional 3D Human Motion Prediction GAN
+Improving MMD-GAN Training with Repulsive Loss Function
+MAD-GAN: Multivariate Anomaly Detection for Time Series Data with
+  Generative Adversarial Networks
+DSAL-GAN: Denoising based Saliency Prediction with Generative
+  Adversarial Networks
+MRI-only brain radiotherapy: assessing the dosimetric accuracy of
+  synthetic CT images generated using a deep learning approach
+Adversarial Variational Embedding for Robust Semi-supervised Learning
+GAN-based Deep Distributional Reinforcement Learning for Resource
+  Management in Network Slicing
+Neuroscore: A Brain-inspired Evaluation Metric for Generative
+  Adversarial Networks
+Biosignal Generation and Latent Variable Analysis with Recurrent
+  Generative Adversarial Networks
+Classification Accuracy Score for Conditional Generative Models
+Generative Adversarial Networks for Operational Scenario Planning of
+  Renewable Energy Farms: A Study on Wind and Photovoltaic
+Synthesizing Diverse Lung Nodules Wherever Massively: 3D
+  Multi-Conditional GAN-based CT Image Augmentation for Object Detection
+Electronic properties of air-exposed GaN$(1\bar{1}00)$ and $(0001)$
+  surfaces after several device processing compatible cleaning steps
+GAN-Tree: An Incrementally Learned Hierarchical Generative Framework for
+  Multi-Modal Data Distributions
+The Angel is in the Priors: Improving GAN based Image and Sequence
+  Inpainting with Better Noise and Structural Priors
+Investigation of wind pressures on tall building under interference
+  effects using machine learning techniques
+Systematic Analysis of Image Generation using GANs
+On the Anomalous Generalization of GANs
+Vulnerability of Face Recognition to Deep Morphing
+The Detection of Distributional Discrepancy for Text Generation
+FCSR-GAN: Joint Face Completion and Super-resolution via Multi-task
+  Learning
+Change your singer: a transfer learning generative adversarial framework
+  for song to song conversion
+Enhanced injection efficiency and light output in bottom tunnel-junction
+  light-emitting diodes using UID GaN spacers
+On the Effectiveness of Least Squares Generative Adversarial Networks
+Enforcing constraints for interpolation and extrapolation in Generative
+  Adversarial Networks
+GANAX: A Unified MIMD-SIMD Acceleration for Generative Adversarial
+  Networks
+TreeGAN: Syntax-Aware Sequence Generation with Generative Adversarial
+  Networks
+GANs beyond divergence minimization
+Use of Neural Signals to Evaluate the Quality of Generative Adversarial
+  Network Performance in Facial Image Generation
+COCO-GAN: Generation by Parts via Conditional Coordinating
+Optical Link of the Atlas Pixel Detector
+Microscopic origin of light emission in Al_yGa_{1-y}N/GaN superlattice:
+  Band profile and active site
+Theory of the ultrafast mode-locked GaN lasers in a large-signal regime
+Application of Analog Network Coding to MIMO Two-Way Relay Channel in
+  Cellular Systems
+Image Classification with A Deep Network Model based on Compressive
+  Sensing
+A Deep Graph Embedding Network Model for Face Recognition
+Cutoff-cladding waveguides: Subdiffraction guided modes near cutoff
+Ways of Conditioning Generative Adversarial Networks
+Unrolled Generative Adversarial Networks
+Generative Adversarial Active Learning
+Training Triplet Networks with GAN
+VAE Learning via Stein Variational Gradient Descent
+A 600 Volt Multi-Stage, High Repetition Rate GaN FET Switch
+Comparison of Maximum Likelihood and GAN-based training of Real NVPs
+Factors Determining the Carrier Distribution in InGaN/GaN
+  Multiple-Quantum-Well Light-Emitting Diodes
+Style Transfer for Anime Sketches with Enhanced Residual U-net and
+  Auxiliary Classifier GAN
+Adversarial nets with perceptual losses for text-to-image synthesis
+Generative Adversarial Source Separation
+Self-Regulating Artificial General Intelligence
+Demystifying AlphaGo Zero as AlphaGo GAN
+On reproduction of On the regularization of Wasserstein GANs
+Attacking Speaker Recognition With Deep Generative Models
+Unsupervised Cipher Cracking Using Discrete GANs
+Spectral Normalization for Generative Adversarial Networks
+Learning the Base Distribution in Implicit Generative Models
+Human Motion Modeling using DVGANs
+Towards Deeper Generative Architectures for GANs using Dense connections
+Generative networks as inverse problems with Scattering transforms
+Semi-Recurrent CNN-based VAE-GAN for Sequential Data Generation
+Generating Image Sequence from Description with LSTM Conditional GAN
+TequilaGAN: How to easily identify GAN samples
+Simultaneous Switching of Multiple GaN Transistors in a High-Speed
+  Switch
+Generalized Latent Variable Recovery for Generative Adversarial Networks
+Generative adversarial networks and adversarial methods in biomedical
+  image analysis
+Training Generative Adversarial Networks Via Turing Test
+Building Footprint Generation Using Improved Generative Adversarial
+  Networks
+Effects of Dataset properties on the training of GANs
+Kernel-Based Training of Generative Networks
+Synthesizing Tabular Data using Generative Adversarial Networks
+Venn GAN: Discovering Commonalities and Particularities of Multiple
+  Distributions
+O-GAN: Extremely Concise Approach for Auto-Encoding Generative
+  Adversarial Networks
+Training Data Independent Image Registration With GANs Using Transfer
+  Learning And Segmentation Information
+Generative Adversarial Networks: recent developments
+Towards Efficient and Unbiased Implementation of Lipschitz Continuity in
+  GANs
+Object Discovery with a Copy-Pasting GAN
+Oxygen-based digital etching of AlGaN/GaN structures with AlN as
+  etch-stop layers
+ARAML: A Stable Adversarial Training Framework for Text Generation
+TorchGAN: A Flexible Framework for GAN Training and Evaluation
+An Auxiliary Classifier Generative Adversarial Framework for Relation
+  Extraction
+Galaxy Image Simulation Using Progressive GANs
+Wasserstein-2 Generative Networks
+Transforming the output of GANs by fine-tuning them with features from
+  different datasets
+Texture Synthesis with Spatial Generative Adversarial Networks
+Triple Generative Adversarial Nets
+GP-GAN: Towards Realistic High-Resolution Image Blending
+Representation Learning by Rotating Your Faces
+Interactive 3D Modeling with a Generative Adversarial Network
+f-GANs in an Information Geometric Nutshell
+Freehand Ultrasound Image Simulation with Spatially-Conditioned
+  Generative Adversarial Networks
+MMGAN: Manifold Matching Generative Adversarial Network
+Dual Motion GAN for Future-Flow Embedded Video Prediction
+Dual Discriminator Generative Adversarial Nets
+Adversarial Training for Disease Prediction from Electronic Health
+  Records with Missing Data
+Generative Steganography with Kerckhoffs' Principle based on Generative
+  Adversarial Networks
+Global versus Localized Generative Adversarial Nets
+Improving Consistency and Correctness of Sequence Inpainting using
+  Semantically Guided Generative Adversarial Network
+Are You Talking to Me? Reasoned Visual Dialog Generation through
+  Adversarial Learning
+Towards Stable Adversarial Feature Learning for LiDAR based Loop Closure
+  Detection
+TV-GAN: Generative Adversarial Network Based Thermal to Visible Face
+  Recognition
+Dynamics Transfer GAN: Generating Video by Transferring Arbitrary
+  Temporal Dynamics from a Source Video to a Single Target Image
+Logo Synthesis and Manipulation with Clustered Generative Adversarial
+  Networks
+Joint Demosaicing and Denoising with Perceptual Optimization on a
+  Generative Adversarial Network
+DA-GAN: Instance-level Image Translation by Deep Attention Generative
+  Adversarial Networks (with Supplementary Materials)
+Room-temperature lasing action in GaN quantum wells in the infrared 1.5
+  micron region
+To Create What You Tell: Generating Videos from Captions
+A Solvable High-Dimensional Model of GAN
+Task Driven Generative Modeling for Unsupervised Domain Adaptation:
+  Application to X-ray Image Segmentation
+Generalization Bounds for Unsupervised Cross-Domain Mapping with WGANs
+Coupled IGMM-GANs for deep multimodal anomaly detection in human
+  mobility data
+Autonomously and Simultaneously Refining Deep Neural Network Parameters
+  by a Bi-Generative Adversarial Network Aided Genetic Algorithm
+Bi-GANs-ST for Perceptual Image Super-resolution
+Unsupervised RGBD Video Object Segmentation Using GANs
+Style Separation and Synthesis via Generative Adversarial Networks
+Towards Adversarial Denoising of Radar Micro-Doppler Signatures
+Prediction of typhoon tracks using a generative adversarial network with
+  observational and meteorological data
+Differentially Private Data Generative Models
+Towards resilient machine learning for ransomware detection
+CT-GAN: Malicious Tampering of 3D Medical Imagery using Deep Learning
+GAN- vs. JPEG2000 Image Compression for Distributed Automotive
+  Perception: Higher Peak SNR Does Not Mean Better Semantic Segmentation
+Semi-Supervised Multitask Learning on Multispectral Satellite Images
+  Using Wasserstein Generative Adversarial Networks (GANs) for Predicting
+  Poverty
+DepthwiseGANs: Fast Training Generative Adversarial Networks for
+  Realistic Image Synthesis
+Deep Learning based End-to-End Wireless Communication Systems with
+  Conditional GAN as Unknown Channel
+Quality-aware Unpaired Image-to-Image Translation
+M2FPA: A Multi-Yaw Multi-Pitch High-Quality Database and Benchmark for
+  Facial Pose Analysis
+Evaluation of the Spatio-Temporal features and GAN for Micro-expression
+  Recognition System
+Top-down fabrication of ordered arrays of GaN nanowires by selective
+  area sublimation
+FH-GAN: Face Hallucination and Recognition using Generative Adversarial
+  Network
+Generative Adversarial Networks for Distributed Intrusion Detection in
+  the Internet of Things
+Accelerating Deconvolution on Unmodified CNN Accelerators for Generative
+  Adversarial Networks -- A Software Approach
+Cascade Attention Guided Residue Learning GAN for Cross-Modal
+  Translation
+Boosted GAN with Semantically Interpretable Information for Image
+  Inpainting
+Sparse Generative Adversarial Network
+Mocycle-GAN: Unpaired Video-to-Video Translation
+GAN-Leaks: A Taxonomy of Membership Inference Attacks against GANs
+Machine Learning for Stochastic Parameterization: Generative Adversarial
+  Networks in the Lorenz '96 Model
+Modification of Excitonic Emission in GaN Microcavities Formed by Planar
+  Hexagonal Micro-Nuts Grown by Selective Area Epitaxy
+High Fidelity Speech Synthesis with Adversarial Networks
+Unsupervised Image Translation using Adversarial Networks for Improved
+  Plant Disease Recognition
+Incremental learning for the detection and classification of
+  GAN-generated images
+PPGAN: Privacy-preserving Generative Adversarial Network
+Facial Expression Recognition Using Human to Animated-Character
+  Expression Translation
+Image Difficulty Curriculum for Generative Adversarial Networks (CuGAN)
+Cross-Domain Face Synthesis using a Controllable GAN
+Exploiting GAN Internal Capacity for High-Quality Reconstruction of
+  Natural Images
+Non-contact electrical detection of intrinsic local charge and internal
+  electric field at nanointerfaces
+High-frequency response of GaN in moderate electric and magnetic fields:
+  Interplay between cyclotron and optical phonon transient time resonances
+Electrical and high-frequency properties of compensated GaN under
+  electron streaming conditions
+Nanophotonic Filters and Integrated Networks in Flexible 2D Polymer
+  Photonic Crystals
+To Study the Effect of Grating Length on Propagating Modes in Bragg
+  Filters with AlxGa1-xN/GaN Material Composition
+Multi-phonon-assisted absorption and emission in semiconductors and its
+  potential for laser refrigeration
+Generative Image Modeling using Style and Structure Adversarial Networks
+Improved Techniques for Training GANs
+Simultaneous light emission and detection of InGaN/GaN multiple quantum
+  well diodes for in-plane visible light communication on a chip
+Generative Adversarial Networks as Variational Training of Energy Based
+  Models
+Invertible Conditional GANs for image editing
+Temporal Generative Adversarial Nets with Singular Value Clipping
+Semantic Compositional Networks for Visual Captioning
+MARTA GANs: Unsupervised Representation Learning for Remote Sensing
+  Image Classification
+Maximum-Likelihood Augmented Discrete Generative Adversarial Networks
+LR-GAN: Layered Recursive Generative Adversarial Networks for Image
+  Generation
+Semi-Latent GAN: Learning to generate and modify facial images from
+  attributes
+The Pose Knows: Video Forecasting by Generating Pose Futures
+Generative Adversarial Networks for Multimodal Representation Learning
+  in Video Hyperlinking
+Learning Texture Manifolds with the Periodic Spatial GAN
+Stabilizing Training of Generative Adversarial Networks through
+  Regularization
+Good Semi-supervised Learning that Requires a Bad GAN
+Language Generation with Recurrent Generative Adversarial Networks
+  without Pre-training
+Channel-Recurrent Autoencoding for Image Modeling
+Do GANs actually learn the distribution? An empirical study
+Generative Adversarial Network based on Resnet for Conditional Image
+  Restoration
+APE-GAN: Adversarial Perturbation Elimination with GAN
+Likelihood Estimation for Generative Adversarial Networks
+Low Dose CT Image Denoising Using a Generative Adversarial Network with
+  Wasserstein Distance and Perceptual Loss
+Deep MR to CT Synthesis using Unpaired Data
+Probabilistic Generative Adversarial Networks
+GANs for Biological Image Synthesis
+Towards the Automatic Anime Characters Creation with Generative
+  Adversarial Networks
+Abnormal Event Detection in Videos using Generative Adversarial Nets
+UV Detector based on InAlN/GaN-on-Si HEMT Stack with Photo-to-Dark
+  Current Ratio > 107
+A Self-Training Method for Semi-Supervised GANs
+Data Augmentation in Emotion Classification Using Generative Adversarial
+  Networks
+On the Discrimination-Generalization Tradeoff in GANs
+3D Reconstruction of Incomplete Archaeological Objects Using a
+  Generative Adversarial Network
+Shape Inpainting using 3D Generative Adversarial Network and Recurrent
+  Convolutional Networks
+Adversarial Feature Augmentation for Unsupervised Domain Adaptation
+High-Resolution Image Synthesis and Semantic Manipulation with
+  Conditional GANs
+Generalization of Deep Neural Networks for Chest Pathology
+  Classification in X-Rays Using Generative Adversarial Networks
+Eye In-Painting with Exemplar Generative Adversarial Networks
+Conditional Generative Adversarial Networks for Emoji Synthesis with
+  Word Embedding Manipulation
+Simulating Patho-realistic Ultrasound Images using Deep Generative
+  Networks with Adversarial Learning
+Differentially Private Releasing via Deep Generative Model (Technical
+  Report)
+Synthetic Data Augmentation using GAN for Improved Liver Lesion
+  Classification
+eCommerceGAN : A Generative Adversarial Network for E-commerce
+Grounded Language Understanding for Manipulation Instructions Using
+  GAN-Based Classification
+Semi-supervised FusedGAN for Conditional Image Generation
+Task-Aware Compressed Sensing with Generative Adversarial Networks
+Generative Adversarial Networks using Adaptive Convolution
+A performance comparison between \b{eta}-Ga2O3 and GaN High Electron
+  Mobility Transistors
+Geometry Score: A Method For Comparing Generative Adversarial Networks
+Adversarial Audio Synthesis
+First Order Generative Adversarial Networks
+Load Balanced GANs for Multi-view Face Image Synthesis
+Attention-Aware Generative Adversarial Networks (ATA-GANs)
+Novelty Detection with GAN
+Maintaining Natural Image Statistics with the Contextual Loss
+Multi-layer MoS2/GaN UV-Visible photodetector with observation of MoS2
+  band edge in spectral responsivity
+Unsupervised Neural Machine Translation with Weight Sharing
+DOOM Level Generation using Generative Adversarial Networks
+Transferring GANs: generating images from limited data
+Unpaired Multi-Domain Image Generation via Regularized Conditional GANs
+Improving GAN Training via Binarized Representation Entropy (BRE)
+  Regularization
+Defense-GAN: Protecting Classifiers Against Adversarial Attacks Using
+  Generative Models
+Adversarial Training of Word2Vec for Basket Completion
+Capturing Variabilities from Computed Tomography Images with Generative
+  Adversarial Networks
+Object Detection using Domain Randomization and Generative Adversarial
+  Refinement of Synthetic Images
+Mixed batches and symmetric discriminators for GAN training
+An empirical study on evaluation metrics of generative adversarial
+  networks
+Disentangling Multiple Conditional Inputs in GANs
+CR-GAN: Learning Complete Representations for Multi-view Generation
+Resembled Generative Adversarial Networks: Two Domains with Similar
+  Attributes
+Pioneer Networks: Progressively Growing Generative Autoencoder
+SiGAN: Siamese Generative Adversarial Network for Identity-Preserving
+  Face Hallucination
+To learn image super-resolution, use a GAN to learn how to do image
+  degradation first
+A Review of Learning with Deep Generative Models from Perspective of
+  Graphical Modeling
+A study on the use of Boundary Equilibrium GAN for Approximate
+  Frontalization of Unconstrained Faces to aid in Surveillance
+Latent Space Optimal Transport for Generative Models
+GANs for Medical Image Analysis
+Deep learning approach in multi-scale prediction of turbulent
+  mixing-layer
+Symbolic Music Genre Transfer with CycleGAN
+FutureGAN: Anticipating the Future Frames of Video Sequences using
+  Spatio-Temporal 3d Convolutions in Progressively Growing GANs
+On Self Modulation for Generative Adversarial Networks
+MDGAN: Boosting Anomaly Detection Using \\Multi-Discriminator Generative
+  Adversarial Networks
+Adversarial Text Generation Without Reinforcement Learning
+GaN Schottky diodes for proton beam monitoring
+An Adversarial Learning Approach to Medical Image Synthesis for Lesion
+  Detection
+GAN Augmentation: Augmenting Training Data using Generative Adversarial
+  Networks
+Minimax Estimation of Neural Net Distance
+M2M-GAN: Many-to-Many Generative Adversarial Transfer Learning for
+  Person Re-Identification
+Tiyuntsong: A Self-Play Reinforcement Learning Approach for ABR Video
+  Streaming
+MimicGAN: Corruption-Mimicking for Blind Image Recovery & Adversarial
+  Defense
+Spatially Controllable Image Synthesis with Internal Representation
+  Collaging
+Cartoon-to-real: An Approach to Translate Cartoon to Realistic Images
+  using GAN
+Effects of microstructure and growth conditions on quantum emitters in
+  Gallium Nitride
+InGAN: Capturing and Remapping the "DNA" of a Natural Image
+FaceFeat-GAN: a Two-Stage Approach for Identity-Preserving Face
+  Synthesis
+Teacher-Student Compression with Generative Adversarial Networks
+StoryGAN: A Sequential Conditional GAN for Story Visualization
+Latent Dirichlet Allocation in Generative Adversarial Networks
+Texture Deformation Based Generative Adversarial Networks for Face
+  Editing
+FIGR: Few-shot Image Generation with Reptile
+On Relativistic $f$-Divergences
+Detecting Overfitting of Deep Generative Networks via Latent Recovery
+Generative Adversarial Classifier for Handwriting Characters
+  Super-Resolution
+Kernel-Guided Training of Implicit Generative Models with Stability
+  Guarantees
+Mode Collapse and Regularity of Optimal Transportation Maps
+Illumination Invariant Foreground Object Segmentation using ForeGANs
+Free-standing 2-inch bulk GaN crystal fabrication by HVPE using a carbon
+  buffer layer
+GANSynth: Adversarial Neural Audio Synthesis
+Harmonizing Maximum Likelihood with GANs for Multimodal Conditional
+  Generation
+GAN Based Image Deblurring Using Dark Channel Prior
+Adversarial Generation of Handwritten Text Images Conditioned on
+  Sequences
+Generative Adversarial Nets for Robust Scatter Estimation: A Proper
+  Scoring Rule Perspective
+A Sinogram Inpainting Method based on Generative Adversarial Network for
+  Limited-angle Computed Tomography
+Voice command generation using Progressive Wavegans
+Identity-Free Facial Expression Recognition using conditional Generative
+  Adversarial Network
+Data Augmentation Using GANs
+Personalized sentence generation using generative adversarial networks
+  with author-specific word usage
+Training generative networks using random discriminators
+Lattice-Constant and Band-Gap Tuning in Wurtzite and Zincblende BInGaN
+  Alloys
+Generative adversarial network based on chaotic time series
+Mask-Guided Portrait Editing with Conditional GANs
+Unsupervised Learning of Anomaly Detection from Contaminated Image Data
+  using Simultaneous Encoder Training
+JGAN: A Joint Formulation of GAN for Synthesizing Images and Labels
+Video-to-Video Translation for Visual Speech Synthesis
+GlyphGAN: Style-Consistent Font Generation Based on Generative
+  Adversarial Networks
+Spatial Evolutionary Generative Adversarial Networks
+Adversarial Sub-sequence for Text Generation
