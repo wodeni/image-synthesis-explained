@@ -5,3 +5,5 @@ declare module "rebass";
 declare module "*.mdx";
 declare module "*.jpg";
 declare module "react-katex";
+declare module "react-d3-components";
+declare module "@fullpage/react-fullpage";

@@ -18,6 +18,9 @@ export const Landing = (props: any) => (
       <Subhead>
         A tale of <Cat /> and <Dog />
       </Subhead>
+      <CallToAction href="/getting-started" mt={3}>
+        See the story
+      </CallToAction>
       <ScrollDownIndicator />
     </Hero>
   </Provider>

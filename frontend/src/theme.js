@@ -1,9 +1,9 @@
 export default {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
-    body: "Poppins, sans-serif",
-    heading: "Poppins, sans-serif",
-    monospace: "Menlo, monospace"
+    body: "Open sans, sans-serif",
+    heading: "Open sans, sans-serif",
+    monospace: "Courier, monospace"
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
   fontWeights: {
