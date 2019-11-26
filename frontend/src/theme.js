@@ -1,11 +1,13 @@
 export default {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  breakpoints: [32, 48, 64],
   fonts: {
     body: "Open sans, sans-serif",
+    story: "Marck Script, cursive",
     heading: "Open sans, sans-serif",
     monospace: "Courier, monospace"
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96, 150],
   fontWeights: {
     body: 400,
     heading: 900,
@@ -17,7 +19,7 @@ export default {
   },
   colors: {
     text: "#000",
-    background: "#fff",
+    background: "#dcc2ee",
     primary: "#609",
     secondary: "#306",
     muted: "#f6f6f6"
@@ -33,12 +35,12 @@ export default {
       fontFamily: "heading",
       lineHeight: "heading",
       fontWeight: "heading",
-      fontSize: 5
+      fontSize: 8
     },
     h2: {
       color: "text",
       fontFamily: "heading",
-      lineHeight: "heading",
+      lineHeight: "body",
       fontWeight: "heading",
       fontSize: 4
     },

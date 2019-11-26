@@ -1,27 +1,37 @@
 import React from "react";
 import generator from "./generator.jpg";
-import { Provider, Heading, Subhead } from "rebass";
-import { Hero, CallToAction, ScrollDownIndicator } from "react-landing-page";
+import LazyHero from "react-lazy-hero";
 import { Cat, Dog } from "./Util";
+import styled from "styled-components";
+import { typography, fontWeight } from "styled-system";
+// eslint-disable-next-line
+import { jsx } from "theme-ui";
+
+const Heading = styled.h1`
+  ${typography}
+  ${fontWeight}
+  color: white;
+  font-size: 3.5em;
+`;
+const SubHead = styled.h2`
+  ${typography}
+  ${fontWeight}
+  color: white
+  font-size: 2em;
+`;
 
 export const Landing = (props: any) => (
-  <Provider
-    theme={{
-      fonts: {
-        sans: '"Avenir Next", Helvetica, sans-serif'
-      },
-      fontSizes: [12, 16, 24, 36, 48, 65]
-    }}
-  >
-    <Hero color="white" bg="rgba(0, 0, 0, 0.6)" backgroundImage={generator}>
-      <Heading>A Visual Introduction to Realistic Image Synthesis </Heading>
-      <Subhead>
+  <div className="section">
+    <LazyHero
+      imageSrc={generator}
+      minHeight="100vh"
+      color="black"
+      opacity={0.4}
+    >
+      <Heading>A Visual Introduction to Realistic Image Synthesis</Heading>
+      <SubHead>
         A tale of <Cat /> and <Dog />
-      </Subhead>
-      <CallToAction href="/getting-started" mt={3}>
-        See the story
-      </CallToAction>
-      <ScrollDownIndicator />
-    </Hero>
-  </Provider>
+      </SubHead>
+    </LazyHero>
+  </div>
 );

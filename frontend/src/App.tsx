@@ -1,35 +1,74 @@
 import * as React from "react";
 import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
-import { Landing } from "./Landing";
 import { Cat, Dog } from "./Util";
 import { ThemeProvider } from "styled-components";
-import { space, layout, color, typography } from "styled-system";
-import { jsx } from "theme-ui";
-import ReactD3 from "react-d3-components";
+import {
+  typography,
+  color,
+  ColorProps,
+  space,
+  SpaceProps,
+  TypographyProps,
+  LayoutProps,
+  layout,
+  FlexboxProps,
+  flexbox
+} from "styled-system";
+
 import ReactFullpage from "@fullpage/react-fullpage";
 
 import styled from "styled-components";
 import theme from "./theme";
+import { Landing } from "./Landing";
 
-const Box = styled.div`
-  ${space}
-  ${layout}
+type BoxProps = TypographyProps &
+  ColorProps &
+  SpaceProps &
+  LayoutProps &
+  FlexboxProps;
+
+const Box = styled.div<BoxProps>`
   ${typography}
   ${color}
+  ${space}
+  ${layout}
+  ${flexbox}
+`;
+
+const P = styled.p<TypographyProps & ColorProps & SpaceProps>`
+  ${typography}
+  ${color}
+  ${space}
+`;
+
+const Page = styled.div<TypographyProps & ColorProps & SpaceProps>`
+  ${typography}
+  ${color}
+  ${space}
 `;
 
 const ascii = "\\int_0^\\infty x^2 dx";
 const Definition = () => (
-  <Box color="primary">
+  <P color="primary">
     Here is some math <InlineMath math={ascii} /> and it's inline. Here is some
     block math:
     <BlockMath math={ascii}></BlockMath>
-  </Box>
+  </P>
 );
 
 const Story = () => (
-  <Box color="primary">
+  <Box
+    fontSize={4}
+    fontFamily="story"
+    fontWeight="bold"
+    p={3}
+    mb={[4, 5]}
+    color="white"
+    bg="primary"
+    width={1 / 2}
+    m="auto"
+  >
     A <Cat /> wants to go to a <Dog />
     -only Halloween party, so she went to the sorceress for help. The sorceress
     specializes in magically generating
@@ -41,7 +80,7 @@ const Story = () => (
 );
 
 const Concept = () => (
-  <p>
+  <P fontFamily="body" p={3}>
     Generative Adversarial Networks comprise of two models:
     <li>
       The first model is the Generator (Gina) and it aims to generate new data
@@ -55,25 +94,25 @@ const Concept = () => (
       Discriminator is analogous to the police (or an art expert), which tries
       to detect artworks as truthful or fraud.
     </li>
-  </p>
+  </P>
 );
 
 const Math = () => (
-  <p>
+  <P>
     <li>
       Nash equilibrium: “GAN is based on the zero-sum non-cooperative game. In
       short, if one wins the other loses. A zero-sum game is also called
       minimax. Your opponent wants to maximize its actions and your actions are
       to minimize them. In game theory, the GAN model converges when the
       discriminator and the generator reach a Nash equilibrium. This is the
-      optimal point for the minimax equation below.”{" "}
+      optimal point for the minimax equation below.”
     </li>
     <li>
       The problem of convergence and different measures of divergence, along
-      with the fact that real GANs are _not_ optimizing towards NE, but rather
-      approximating and minimizing (some measure of) divergence.
+      with the fact that real GANs are <em>not</em> optimizing towards NE, but
+      rather approximating and minimizing (some measure of) divergence.
     </li>
-  </p>
+  </P>
 );
 
 const FullPage = () => (
@@ -84,39 +123,30 @@ const FullPage = () => (
     render={() => {
       return (
         <ReactFullpage.Wrapper>
-          <Landing></Landing>
           <ThemeProvider theme={theme}>
-            <div className="section">
+            <Landing></Landing>
+            <Page bg="background" className="section">
               <Story />
+            </Page>
+            <Page bg="background" className="section">
               <Concept />
+            </Page>
+            <Page bg="background" className="section">
               <Definition />
               <Math />
-              {/* <BarChart
+            </Page>
+            {/* <BarChart
             data={data}
             width={400}
             height={400}
             margin={{ top: 10, bottom: 50, left: 50, right: 10 }}
           /> */}
-            </div>
           </ThemeProvider>
         </ReactFullpage.Wrapper>
       );
     }}
   />
 );
-
-// var BarChart = ReactD3.BarChart;
-
-var data = [
-  {
-    label: "somethingA",
-    values: [
-      { x: "SomethingA", y: 10 },
-      { x: "SomethingB", y: 4 },
-      { x: "SomethingC", y: 3 }
-    ]
-  }
-];
 
 class App extends React.Component {
   public render() {
