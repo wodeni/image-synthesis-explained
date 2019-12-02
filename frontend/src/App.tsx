@@ -3,6 +3,9 @@ import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
 import { Cat, Dog } from "./Util";
 import { ThemeProvider } from "styled-components";
+import { Player } from "video-react";
+
+import story from "./story.mp4";
 import {
   typography,
   color,
@@ -115,6 +118,17 @@ const Math = () => (
   </P>
 );
 
+const StoryVid = () => (
+  <Box>
+    <video width="50%" height="50%" controls>
+      <source
+        src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </Box>
+);
+
 const FullPage = () => (
   <ReactFullpage
     //fullpage options
@@ -127,6 +141,13 @@ const FullPage = () => (
             <Landing></Landing>
             <Page bg="background" className="section">
               <Story />
+              <StoryVid />
+              {/* <Player
+                  playsInline
+                  poster="/assets/poster.png"
+                  width="700"
+                  src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                /> */}
             </Page>
             <Page bg="background" className="section">
               <Concept />
