@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/image-synthesis-explained/static/css/main.ca17d1e5.chunk.css",
+    "main.js": "/image-synthesis-explained/static/js/main.6a675dfe.chunk.js",
+    "main.js.map": "/image-synthesis-explained/static/js/main.6a675dfe.chunk.js.map",
+    "runtime-main.js": "/image-synthesis-explained/static/js/runtime-main.2e18cb0c.js",
+    "runtime-main.js.map": "/image-synthesis-explained/static/js/runtime-main.2e18cb0c.js.map",
+    "static/css/2.3b71abbb.chunk.css": "/image-synthesis-explained/static/css/2.3b71abbb.chunk.css",
+    "static/js/2.d11cb7a7.chunk.js": "/image-synthesis-explained/static/js/2.d11cb7a7.chunk.js",
+    "static/js/2.d11cb7a7.chunk.js.map": "/image-synthesis-explained/static/js/2.d11cb7a7.chunk.js.map",
+    "index.html": "/image-synthesis-explained/index.html",
+    "precache-manifest.c2ea80b1cfc647fc0f6f4b9f29f73b62.js": "/image-synthesis-explained/precache-manifest.c2ea80b1cfc647fc0f6f4b9f29f73b62.js",
+    "service-worker.js": "/image-synthesis-explained/service-worker.js",
+    "static/css/2.3b71abbb.chunk.css.map": "/image-synthesis-explained/static/css/2.3b71abbb.chunk.css.map",
+    "static/css/main.ca17d1e5.chunk.css.map": "/image-synthesis-explained/static/css/main.ca17d1e5.chunk.css.map",
+    "static/media/katex.min.css": "/image-synthesis-explained/static/media/KaTeX_Typewriter-Regular.6cc31ea5.woff2",
+    "static/media/generator.jpg": "/image-synthesis-explained/static/media/generator.2e7931ff.jpg",
+    "static/media/story.mp4": "/image-synthesis-explained/static/media/story.0dd5cf4f.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e18cb0c.js",
+    "static/css/2.3b71abbb.chunk.css",
+    "static/js/2.d11cb7a7.chunk.js",
+    "static/css/main.ca17d1e5.chunk.css",
+    "static/js/main.6a675dfe.chunk.js"
+  ]
+}

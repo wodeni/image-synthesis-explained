@@ -7,7 +7,7 @@ export default {
     heading: "Open sans, sans-serif",
     monospace: "Courier, monospace"
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96, 150],
+  fontSizes: [12, 14, 18, 22, 24, 32, 48, 64, 96, 150],
   radii: [0, 2, 4, 16, 9999, "100%"],
   width: [16, 32, 64, 128, 256],
   heights: [16, 32, 64, 128, 256],
@@ -22,11 +22,15 @@ export default {
     heading: 1.25
   },
   colors: {
-    text: "#000",
+    text: "#fff",
+    annotation: "#383838",
     background: "#dcc2ee",
     primary: "#609",
     secondary: "#306",
-    muted: "#f6f6f6"
+    muted: "#f6f6f6",
+    // overlay: "#00000050"
+    overlay: "#a16fe8b8",
+    chip: "rgba(149, 20, 199, 0.8)"
   },
   styles: {
     root: {
@@ -39,7 +43,7 @@ export default {
       fontFamily: "heading",
       lineHeight: "heading",
       fontWeight: "heading",
-      fontSize: 8
+      fontSize: 9
     },
     h2: {
       color: "text",
@@ -100,6 +104,12 @@ export default {
       width: "100%",
       borderCollapse: "separate",
       borderSpacing: 0
+    },
+    strong: {
+      fontFamily: "body",
+      fontSize: "inherit",
+      fontWeight: "bold",
+      color: "primary"
     },
     th: {
       textAlign: "left",
