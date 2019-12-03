@@ -1,22 +1,18 @@
 import * as React from "react";
+
 import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
 import { Cat, Dog } from "./Util";
 import { ThemeProvider } from "styled-components";
-import { Player } from "video-react";
 
 import story from "./story.mp4";
 import {
   typography,
-  color,
-  ColorProps,
-  space,
-  SpaceProps,
-  TypographyProps,
-  LayoutProps,
+  border,
   layout,
-  FlexboxProps,
-  flexbox
+  flexbox,
+  space,
+  color
 } from "styled-system";
 
 import ReactFullpage from "@fullpage/react-fullpage";
@@ -25,31 +21,14 @@ import styled from "styled-components";
 import theme from "./theme";
 import { Landing } from "./Landing";
 
-type BoxProps = TypographyProps &
-  ColorProps &
-  SpaceProps &
-  LayoutProps &
-  FlexboxProps;
-
-const Box = styled.div<BoxProps>`
-  ${typography}
+const Video = styled("video")(layout);
+const Box = styled("div")(border, typography, space, color);
+const P = styled("p")(typography, space, color, flexbox);
+const Page = styled.div`
   ${color}
-  ${space}
-  ${layout}
-  ${flexbox}
+  className : "section"
 `;
-
-const P = styled.p<TypographyProps & ColorProps & SpaceProps>`
-  ${typography}
-  ${color}
-  ${space}
-`;
-
-const Page = styled.div<TypographyProps & ColorProps & SpaceProps>`
-  ${typography}
-  ${color}
-  ${space}
-`;
+// const Video = styled("video")(space, flexbox);
 
 const ascii = "\\int_0^\\infty x^2 dx";
 const Definition = () => (
@@ -64,13 +43,14 @@ const Story = () => (
   <Box
     fontSize={4}
     fontFamily="story"
+    borderRadius={3}
     fontWeight="bold"
     p={3}
-    mb={[4, 5]}
     color="white"
     bg="primary"
-    width={1 / 2}
-    m="auto"
+    textAlign="center"
+    width={2 / 3}
+    mx={6}
   >
     A <Cat /> wants to go to a <Dog />
     -only Halloween party, so she went to the sorceress for help. The sorceress
@@ -83,7 +63,7 @@ const Story = () => (
 );
 
 const Concept = () => (
-  <P fontFamily="body" p={3}>
+  <P fontFamily="body" m={3}>
     Generative Adversarial Networks comprise of two models:
     <li>
       The first model is the Generator (Gina) and it aims to generate new data
@@ -101,7 +81,7 @@ const Concept = () => (
 );
 
 const Math = () => (
-  <P>
+  <P fontFamily="body" mb={[4, 5]} m={3}>
     <li>
       Nash equilibrium: “GAN is based on the zero-sum non-cooperative game. In
       short, if one wins the other loses. A zero-sum game is also called
@@ -119,62 +99,42 @@ const Math = () => (
 );
 
 const StoryVid = () => (
-  <Box>
-    <video width="50%" height="50%" controls>
-      <source
-        src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-        type="video/mp4"
-      />
-    </video>
+  <Box m={3} textAlign="center">
+    <Video width={1 / 2} data-autoplay loop>
+      <source src={story} type="video/mp4" />
+    </Video>
   </Box>
 );
 
-const FullPage = () => (
-  <ReactFullpage
-    //fullpage options
-    licenseKey={"YOUR_KEY_HERE"}
-    scrollingSpeed={1000} /* Options here */
-    render={() => {
-      return (
-        <ReactFullpage.Wrapper>
-          <ThemeProvider theme={theme}>
-            <Landing></Landing>
-            <Page bg="background" className="section">
-              <Story />
-              <StoryVid />
-              {/* <Player
-                  playsInline
-                  poster="/assets/poster.png"
-                  width="700"
-                  src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-                /> */}
-            </Page>
-            <Page bg="background" className="section">
-              <Concept />
-            </Page>
-            <Page bg="background" className="section">
-              <Definition />
-              <Math />
-            </Page>
-            {/* <BarChart
-            data={data}
-            width={400}
-            height={400}
-            margin={{ top: 10, bottom: 50, left: 50, right: 10 }}
-          /> */}
-          </ThemeProvider>
-        </ReactFullpage.Wrapper>
-      );
-    }}
-  />
-);
-
 class App extends React.Component {
-  public render() {
+  render() {
     return (
-      <>
-        <FullPage />;
-      </>
+      <div className="App">
+        <ReactFullpage
+          scrollOverflow={true}
+          licenseKey={"YOUR_KEY_HERE"}
+          render={({ state, fullpageApi }) => {
+            return (
+              <div id="fullpage-wrapper">
+                <ThemeProvider theme={theme}>
+                  <Landing></Landing>
+                  <Page bg="background" className="section">
+                    <Story />
+                    <StoryVid />
+                  </Page>
+                  <Page bg="background" className="section">
+                    <Concept />
+                  </Page>
+                  <Page bg="background" className="section">
+                    <Definition />
+                    <Math />
+                  </Page>
+                </ThemeProvider>
+              </div>
+            );
+          }}
+        />
+      </div>
     );
   }
 }

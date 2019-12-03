@@ -3,11 +3,15 @@ export default {
   breakpoints: [32, 48, 64],
   fonts: {
     body: "Open sans, sans-serif",
-    story: "Marck Script, cursive",
+    story: "Comic sans, sans-serif",
     heading: "Open sans, sans-serif",
     monospace: "Courier, monospace"
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96, 150],
+  radii: [0, 2, 4, 16, 9999, "100%"],
+  width: [16, 32, 64, 128, 256],
+  heights: [16, 32, 64, 128, 256],
+  maxWidths: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
   fontWeights: {
     body: 400,
     heading: 900,

@@ -4,8 +4,6 @@ import LazyHero from "react-lazy-hero";
 import { Cat, Dog } from "./Util";
 import styled from "styled-components";
 import { typography, fontWeight } from "styled-system";
-// eslint-disable-next-line
-import { jsx } from "theme-ui";
 
 const Heading = styled.h1`
   ${typography}
@@ -20,7 +18,7 @@ const SubHead = styled.h2`
   font-size: 2em;
 `;
 
-export const Landing = (props: any) => (
+export const Landing = props => (
   <div className="section">
     <LazyHero
       imageSrc={generator}
