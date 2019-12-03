@@ -1,5 +1,5 @@
 import React from "react";
-import generator from "./generator.jpg";
+import generator from "./assets/generator.jpg";
 import LazyHero from "react-lazy-hero";
 import { Cat, Dog } from "./Util";
 import styled from "styled-components";

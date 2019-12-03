@@ -2,33 +2,16 @@ import * as React from "react";
 
 import "katex/dist/katex.min.css";
 import { InlineMath, BlockMath } from "react-katex";
-import { Cat, Dog } from "./Util";
 import { ThemeProvider } from "styled-components";
+import { P, Box, Video, Page } from "./Util";
+import { Story } from "./Story";
 
-import story from "./story.mp4";
-import {
-  typography,
-  border,
-  layout,
-  flexbox,
-  space,
-  color
-} from "styled-system";
+import story from "./assets/story.mp4";
 
 import ReactFullpage from "@fullpage/react-fullpage";
 
-import styled from "styled-components";
 import theme from "./theme";
 import { Landing } from "./Landing";
-
-const Video = styled("video")(layout);
-const Box = styled("div")(border, typography, space, color);
-const P = styled("p")(typography, space, color, flexbox);
-const Page = styled.div`
-  ${color}
-  className : "section"
-`;
-// const Video = styled("video")(space, flexbox);
 
 const ascii = "\\int_0^\\infty x^2 dx";
 const Definition = () => (
@@ -37,29 +20,6 @@ const Definition = () => (
     block math:
     <BlockMath math={ascii}></BlockMath>
   </P>
-);
-
-const Story = () => (
-  <Box
-    fontSize={4}
-    fontFamily="story"
-    borderRadius={3}
-    fontWeight="bold"
-    p={3}
-    color="white"
-    bg="primary"
-    textAlign="center"
-    width={2 / 3}
-    mx={6}
-  >
-    A <Cat /> wants to go to a <Dog />
-    -only Halloween party, so she went to the sorceress for help. The sorceress
-    specializes in magically generating
-    <Dog />
-    -looking cats. The key to getting into the party is to pass the <Dog />
-    -ness inspection by another powerful sorceress, so the disguise has to be
-    indistinguishable from other <Dog /> guests.
-  </Box>
 );
 
 const Concept = () => (
@@ -106,12 +66,16 @@ const StoryVid = () => (
   </Box>
 );
 
+const anchors = ["firstPage", "secondPage", "thirdPage"];
+
 class App extends React.Component {
   render() {
     return (
       <div className="App">
         <ReactFullpage
           scrollOverflow={true}
+          navigation
+          navigationTooltips={anchors}
           licenseKey={"YOUR_KEY_HERE"}
           render={({ state, fullpageApi }) => {
             return (
