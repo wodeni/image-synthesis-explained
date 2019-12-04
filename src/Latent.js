@@ -43,16 +43,14 @@ export default class Latent extends React.Component {
       <Box mx={1}>
         <Chip>{props.label}</Chip>
         <P color="text">Choose the dog category</P>
-        <select
+        <Select
           bg="primary"
           name="Dog Category"
           value={props.value}
           onChange={props.onChange}
         >
-          {Object.entries(dogClasses).map(([index, name]) => {
-            return <option key={name}>{index}</option>;
-          })}
-        </select>
+          {props.options}
+        </Select>
       </Box>
     );
     return (
@@ -67,6 +65,10 @@ export default class Latent extends React.Component {
                   onChange={e => {
                     this.setState({ dogClass1: e.target.value });
                   }}
+                  options={Object.entries(dogClasses).map(([name, index]) => {
+                    if (name !== this.state.dogClass2)
+                      return <option key={index}>{name}</option>;
+                  })}
                 />
               </Box>
               <Box my={3} width={1}>
@@ -121,6 +123,10 @@ export default class Latent extends React.Component {
                   console.log(e.target.value);
                   this.setState({ dogClass2: e.target.value });
                 }}
+                options={Object.entries(dogClasses).map(([name, index]) => {
+                  if (name !== this.state.dogClass1)
+                    return <option key={index}>{name}</option>;
+                })}
               />
               <Box my={3} width={1}>
                 <Image
