@@ -1,38 +1,79 @@
 import arxiv
 import json
+from scholarly import scholarly
+import csv
 
-# Keyword queries
-# arxiv.query(query="GAN", max_results=100)
-# Multi-field queries
-# arxiv.query(query="au:balents_leon AND cat:cond-mat.str-el")
-# Get single record by ID
-# arxiv.query(id_list=["1707.08567"])
-# Get multiple records by ID
-# arxiv.query(id_list=["1707.08567", "1707.08567"])
 
-# Get interator over query results
-query_result = arxiv.query(query="GAN", max_chunk_results=10, iterative=True)
-full_data = []
-trimmed_data = []
-for paper in query_result():
-    # filter by category first
-    if 'cs' in paper.arxiv_primary_category['term']:
-        # Paper title
-        # Paper authors
-        # Paper published time
-        # Category: map to expanded string
-        # (optional) citation data
+def srape_arxiv():
+    # Get interator over query results
+    query_result = arxiv.query(
+        query="ti: GAN", max_chunk_results=10, iterative=True)
+    full_data = []
+    trimmed_data = []
+    for paper in query_result():
+        # filter by category first
+        if 'cs' in paper.arxiv_primary_category['term']:
+            data = {
+                'title': paper.title,
+                'authors': paper.authors,
+                'published': paper.published,
+                'published_parsed': paper.published_parsed,
+                'category': paper.arxiv_primary_category
+            }
+            full_data.append(paper)
+            trimmed_data.append(data)
+
+            # Make Google scholar query
+            search_query = scholarly.search_pubs_query(paper.title)
+            print(next(search_query))
+
+    with open('arxiv-data-cleaned.json', 'w') as outfile:
+        json.dump(trimmed_data, outfile)
+    with open('arxiv-data.json', 'w') as outfile:
+        json.dump(full_data, outfile)
+
+
+proxies = {'http': 'socks5://127.0.0.1:9050',
+           'https': 'socks5://127.0.0.1:9050'}
+scholarly.use_proxy(**proxies)
+
+_CITATIONAUTH = '/citations?user={0}&hl=en'
+_CITATIONPUB = '/citations?hl=en&view_op=view_citation&citation_for_view={0}'
+_KEYWORDSEARCH = '/citations?view_op=search_authors&hl=en&mauthors=label:{0}'
+_PUBSEARCH = '/scholar?hl=en&q={0}'
+_SCHOLARPUB = '/scholar?oi = bibs & hl = en & cites = {0}'
+
+with open("gans.tsv") as fd:
+    reader = csv.DictReader(fd, dialect='excel-tab')
+    res = []
+    for paper in reader:
+        # Get arxiv id
+        arxiv_id = paper['Arxiv'].rsplit('/', 1)[-1]
+        arxiv_paper = arxiv.query(id_list=[arxiv_id])[0]
+
+        # Make Google scholar query
+        search_query = scholarly.search_pubs_query(paper['Title'])
+        try:
+            scholar_res = next(search_query)
+            scholar_paper = json.loads(json.dumps(scholar_res.__dict__))
+            # scholar_paper = next(search_query)
+        except StopIteration:
+            print("Skipping paper: " + paper['Title'])
+            continue
+        if 'citedby' in scholar_paper:
+            citations = scholar_paper['citedby']
+        else:
+            print("[No citation info]")
+            citations = 0
         data = {
-            'title': paper.title,
-            'authors': paper.authors,
-            'published': paper.published,
-            'published_parsed': paper.published_parsed,
-            'category': paper.arxiv_primary_category
+            'title': paper['Title'],
+            'authors': arxiv_paper.authors,
+            'year': paper['Year'],
+            'month': paper['Month'],
+            'citations': citations,
+            'category': arxiv_paper.arxiv_primary_category
         }
-        full_data.append(paper)
-        trimmed_data.append(data)
-
-with open('arxiv-data-cleaned.json', 'w') as outfile:
-    json.dump(trimmed_data, outfile)
-with open('arxiv-data.json', 'w') as outfile:
-    json.dump(full_data, outfile)
+        res.append(data)
+        print(data)
+    with open('gans.json', 'w') as outfile:
+        json.dump(res, outfile)
