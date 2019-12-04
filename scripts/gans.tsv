@@ -52,7 +52,6 @@ Year	Month	Abbr.	Title	Arxiv	Official_Code	Watches	Stars	Forks
 2016	12	SGAN	Stacked Generative Adversarial Networks	https://arxiv.org/abs/1612.04357v4	https://github.com/xunhuang1995/SGAN	8	202	49
 2016	12	SimGAN	Learning from Simulated and Unsupervised Images through Adversarial Training	https://arxiv.org/abs/1612.07828	-			
 2016	12	StackGAN	StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks	https://arxiv.org/abs/1612.03242v1	https://github.com/hanzhanggit/StackGAN	59	1201	295
-2016	12	textGAN	Generating Text via Adversarial Training	https://zhegan27.github.io/Papers/textGAN_nips2016_workshop.pdf	-			
 2017	1	AdaGAN	AdaGAN: Boosting Generative Models	https://arxiv.org/abs/1701.02386v1	-			
 2017	1	ID-CGAN	Image De-raining Using a Conditional Generative Adversarial Network	https://arxiv.org/abs/1701.05957v3	-			
 2017	1	LAGAN	Learning Particle Physics by Example: Location-Aware Generative Adversarial Networks for Physics Synthesis	https://arxiv.org/abs/1701.05927	-			

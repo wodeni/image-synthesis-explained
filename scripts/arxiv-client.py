@@ -61,9 +61,10 @@ with open("gans.tsv") as fd:
         # Get arxiv id
         arxiv_id = paper['Arxiv'].rsplit('/', 1)[-1]
         arxiv_papers = arxiv.query(id_list=[arxiv_id])
-        arxiv_paper = arxiv_papers[0]
         if len(arxiv_papers) == 0:
-            print(arxiv_id)
+            print("Arxiv link invalid: " + paper['Arxiv'])
+            continue
+        arxiv_paper = arxiv_papers[0]
         # Make Google scholar query
         # search_query = scholarly.search_pubs_query(paper['Title'])
         # scholar_res = try_until(lambda: next(search_query), 100, 3)
@@ -88,6 +89,6 @@ with open("gans.tsv") as fd:
             'category': arxiv_paper.arxiv_primary_category
         }
         res.append(data)
-        print(data)
+        # print(data)
     with open('gans.json', 'w') as outfile:
         json.dump(res, outfile)
