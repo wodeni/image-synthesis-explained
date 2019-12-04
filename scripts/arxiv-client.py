@@ -1,5 +1,6 @@
 import arxiv
 import json
+from time import sleep
 from scholarly import scholarly
 import csv
 
@@ -33,6 +34,16 @@ def srape_arxiv():
         json.dump(full_data, outfile)
 
 
+def try_until(func, max_tries, sleep_time):
+    for _ in range(0, max_tries):
+        try:
+            return func()
+        except:
+            print("Retrying query...")
+            sleep(sleep_time)
+    raise WellNamedException()
+
+
 proxies = {'http': 'socks5://127.0.0.1:9050',
            'https': 'socks5://127.0.0.1:9050'}
 scholarly.use_proxy(**proxies)
@@ -52,25 +63,26 @@ with open("gans.tsv") as fd:
         arxiv_paper = arxiv.query(id_list=[arxiv_id])[0]
 
         # Make Google scholar query
-        search_query = scholarly.search_pubs_query(paper['Title'])
-        try:
-            scholar_res = next(search_query)
-            scholar_paper = json.loads(json.dumps(scholar_res.__dict__))
-            # scholar_paper = next(search_query)
-        except StopIteration:
-            print("Skipping paper: " + paper['Title'])
-            continue
-        if 'citedby' in scholar_paper:
-            citations = scholar_paper['citedby']
-        else:
-            print("[No citation info]")
-            citations = 0
+        # search_query = scholarly.search_pubs_query(paper['Title'])
+        # scholar_res = try_until(lambda: next(search_query), 100, 3)
+        # scholar_paper = json.loads(json.dumps(scholar_res.__dict__))
+        # try:
+        #     scholar_paper = json.loads(json.dumps(scholar_res.__dict__))
+        #     # scholar_paper = next(search_query)
+        # except StopIteration:
+        #     print("Skipping paper: " + paper['Title'])
+        #     continue
+        # if 'citedby' in scholar_paper:
+        #     citations = scholar_paper['citedby']
+        # else:
+        #     print("[No citation info]")
+        #     citations = 0
         data = {
             'title': paper['Title'],
             'authors': arxiv_paper.authors,
             'year': paper['Year'],
             'month': paper['Month'],
-            'citations': citations,
+            # 'citations': citations,
             'category': arxiv_paper.arxiv_primary_category
         }
         res.append(data)
