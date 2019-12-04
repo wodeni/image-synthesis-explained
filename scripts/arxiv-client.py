@@ -60,8 +60,10 @@ with open("gans.tsv") as fd:
     for paper in reader:
         # Get arxiv id
         arxiv_id = paper['Arxiv'].rsplit('/', 1)[-1]
-        arxiv_paper = arxiv.query(id_list=[arxiv_id])[0]
-
+        arxiv_papers = arxiv.query(id_list=[arxiv_id])
+        arxiv_paper = arxiv_papers[0]
+        if len(arxiv_papers) == 0:
+            print(arxiv_id)
         # Make Google scholar query
         # search_query = scholarly.search_pubs_query(paper['Title'])
         # scholar_res = try_until(lambda: next(search_query), 100, 3)
