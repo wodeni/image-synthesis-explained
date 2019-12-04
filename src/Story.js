@@ -16,11 +16,11 @@ export default () => (
       mx={6}
     >
       A <Cat /> wants to go to a <Dog />
-      -only Halloween party, so she went to the sorceress for help. The
-      sorceress specializes in magically generating
+      -only Halloween party, so she went to Gandolf for help, who specializes in
+      magically generating
       <Dog />
       -looking cats. The key to getting into the party is to pass the <Dog />
-      -ness inspection by another powerful sorceress, so the disguise has to be
+      -ness inspection by Diophantus, so the disguise has to be
       indistinguishable from other <Dog /> guests.
     </Box>
   </Page>

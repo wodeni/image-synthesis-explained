@@ -30,22 +30,16 @@ export const Page = styled.div`
   ${background}
 `;
 export const TransparentBox = ({ ...props }) => (
-  <Box
-    {...props}
-    css={{
-      borderRadius: "4",
-      boxShadow: "0 2px 4px rgba(0, 0, 0, .125)"
-    }}
-  />
+  <Box {...props} borderRadius="3" boxShadow="0 2px 4px rgba(0, 0, 0, .125)" />
 );
 
 export const Chip = ({ ...props }) => (
   <Box
-    borderRadius={4}
+    borderRadius={[4, 2, 0]}
     mx={5}
     p={1}
     bg="chip"
-    fontSize={4}
+    fontSize={[4, 4, 1]}
     color="text"
     {...props}
   />

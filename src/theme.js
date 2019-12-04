@@ -25,6 +25,7 @@ export default {
     text: "#fff",
     annotation: "#383838",
     background: "#dcc2ee",
+    bgTrans: "#dcc2ee80",
     primary: "#609",
     secondary: "#306",
     muted: "#f6f6f6",
@@ -42,8 +43,7 @@ export default {
       color: "text",
       fontFamily: "heading",
       lineHeight: "heading",
-      fontWeight: "heading",
-      fontSize: 9
+      fontWeight: "heading"
     },
     h2: {
       color: "text",

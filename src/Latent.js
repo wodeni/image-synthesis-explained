@@ -44,10 +44,11 @@ export default class Latent extends React.Component {
         <Chip>{props.label}</Chip>
         <P color="text">Choose the dog category</P>
         <Select
-          bg="primary"
           name="Dog Category"
           value={props.value}
           onChange={props.onChange}
+          bg="secondary"
+          sx={{ color: "primary" }}
         >
           {props.options}
         </Select>

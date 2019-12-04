@@ -7,6 +7,7 @@ import theme from "./theme";
 import { Landing } from "./Landing";
 import Story from "./Story";
 import Latent from "./Latent";
+import ArXiv from "./ArXiv";
 import Network from "./Network";
 import Characters from "./Characters";
 import Components from "./Components";
@@ -51,6 +52,7 @@ class App extends React.Component {
                   <Network />
                   <Components />
                   <MathFoundation />
+                  <ArXiv />
                   <Latent />
                 </ThemeProvider>
               </div>
