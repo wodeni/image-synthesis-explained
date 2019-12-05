@@ -13,6 +13,7 @@ import Characters from "./Characters";
 import Components from "./Components";
 import MathFoundation from "./MathFoundation";
 import DogGen from "./DogGen";
+import GanIntro from "./GanIntro";
 
 const Math = () => (
   <P fontFamily="body" mb={[4, 5]} m={3}>
@@ -50,6 +51,7 @@ class App extends React.Component {
                   <Landing />
                   <Characters />
                   <Story />
+                  <GanIntro />
                   <Network />
                   <Components />
                   <MathFoundation />
