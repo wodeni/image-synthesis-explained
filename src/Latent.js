@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Page, P, Chip } from "./Util";
-import bg2 from "./assets/bg2.jpg";
-import bg3 from "./assets/bg3.png";
+import { Page, P, Chip, Cat, Dog } from "./Util";
+import bg2 from "./assets/bg2-half-bottom.jpg";
 import { Flex, Box } from "@rebass/grid";
 import { Label, Select } from "@rebass/forms";
 import { Image } from "rebass";
@@ -10,8 +9,11 @@ import "rc-slider/assets/index.css";
 import catClasses from "./data/catClasses.json";
 import dogClasses from "./data/dogClasses-small.json";
 import Tooltip from "rc-tooltip";
+import Emoji from "react-emoji-render";
 import "rc-slider/assets/index.css";
 import "rc-tooltip/assets/bootstrap.css";
+import { InlineMath, BlockMath } from "react-katex";
+import "katex/dist/katex.min.css";
 
 const SliderWithTooltip = createSliderWithTooltip(Slider);
 const Handle = Slider.Handle;
@@ -164,6 +166,24 @@ export default class Latent extends React.Component {
               </Box>
             </Box>
           </Flex>
+        </Box>
+        <Box
+          mx={5}
+          p={2}
+          textAlign="center"
+          //  bg="rgb(113, 22, 237)"
+        >
+          <P fontSize={5} color="text" fontWeight="bold">
+            Now, can you go from <Cat /> to <Dog />? Select a type of <Cat />{" "}
+            and <Dog /> and use the slider to control the amount of <Dog />
+            -ness you'd like
+            <Emoji text=":arrow_up:"></Emoji>
+          </P>
+          <P fontSize={3} color="text" fontWeight="light">
+            The input vectors are <i>interpolated</i> linearly like so:{" "}
+            <InlineMath math={"y=\\alpha y_1+(1-\\alpha)y_2"}></InlineMath>,
+            where <InlineMath math={"\\alpha"} /> is a weight between 0 and 1.
+          </P>
         </Box>
       </Page>
     );

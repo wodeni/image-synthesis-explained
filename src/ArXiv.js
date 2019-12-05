@@ -197,7 +197,7 @@ export default class ArXiv extends React.Component {
     return (
       <Page bg="white" className="section">
         <H1 textAlign="center" color="primary">
-          People are synthesizing more images!
+          A bit of history...
         </H1>
         <Flex justifyContent="center">
           <Box m={5} width={2 / 3} ref="canvas"></Box>
@@ -205,20 +205,4 @@ export default class ArXiv extends React.Component {
       </Page>
     );
   }
-  //   constructor(props) {
-  //     super(props);
-  //     this.state = { d3: "" };
-  //   }
-
-  //   componentDidMount() {
-  //     this.setState({ d3: node });
-  //   }
-
-  //   render() {
-  //     return (
-  //       <Page bg="secondary" className="section">
-  //         <RD3Component data={this.state.d3} />
-  //       </Page>
-  //     );
-  //   }
 }

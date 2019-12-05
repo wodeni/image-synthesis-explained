@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Page, P, Chip } from "./Util";
+import { Dog, Page, P, Chip, Cat } from "./Util";
 import { Flex, Box } from "@rebass/grid";
 import dogClasses from "./data/dogClasses.json";
 import catClasses from "./data/catClasses.json";
@@ -7,7 +7,8 @@ import { Image } from "rebass";
 import { Label, Select } from "@rebass/forms";
 import Slider, { createSliderWithTooltip } from "rc-slider";
 import "rc-slider/assets/index.css";
-import bg2 from "./assets/bg2-half.png";
+import bg2 from "./assets/bg2-half.jpg";
+import Emoji from "react-emoji-render";
 
 const classes = { ...dogClasses };
 
@@ -16,7 +17,6 @@ export default class DogGen extends React.Component {
     super(props);
 
     this.state = {
-      //   weight: 0.5,
       class: Object.keys(classes)[0]
     };
   }
@@ -49,7 +49,14 @@ export default class DogGen extends React.Component {
             //   bg="rgb(113, 22, 237)"
           >
             <P fontSize={5} color="text" fontWeight="bold">
-              Some text
+              So, can GAN(dolf) help the <Cat />? Let's try it with real images.
+              You can pick your favorite type of <Dog /> and start generating
+              some images here <Emoji text=":arrow_right:"></Emoji>
+            </P>
+            <P fontSize={3} color="text" fontWeight="light">
+              The three images correspond to three input vectors to the network
+              for the same class of dogs, generated with differernt random
+              seeds.
             </P>
           </Box>
           <Box
@@ -66,7 +73,7 @@ export default class DogGen extends React.Component {
                 <Box mx={2}>
                   <Box mx={1}>
                     <Chip>Dog category</Chip>
-                    <P color="primary">Choose the an animal category</P>
+                    <P color="primary">Choose a dog category</P>
                     <Select
                       value={this.state.class}
                       bg="secondary"
