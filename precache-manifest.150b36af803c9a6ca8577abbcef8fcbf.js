@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7cb17d44f029660c4f376c9c0358c09",
+    "revision": "bfc68eb8e9e72c012aa9e01d594f667a",
     "url": "/image-synthesis-explained/index.html"
   },
   {
-    "revision": "d30db037decab0818a21",
+    "revision": "f0e20093c97a9da74b36",
     "url": "/image-synthesis-explained/static/css/2.55ebcf1f.chunk.css"
   },
   {
-    "revision": "2362a56436edf14ae365",
+    "revision": "6129fe153d3770caecdc",
     "url": "/image-synthesis-explained/static/css/main.73ef3f6f.chunk.css"
   },
   {
-    "revision": "d30db037decab0818a21",
-    "url": "/image-synthesis-explained/static/js/2.ac95c73e.chunk.js"
+    "revision": "f0e20093c97a9da74b36",
+    "url": "/image-synthesis-explained/static/js/2.257a85fd.chunk.js"
   },
   {
-    "revision": "2362a56436edf14ae365",
-    "url": "/image-synthesis-explained/static/js/main.fec8eea0.chunk.js"
+    "revision": "6129fe153d3770caecdc",
+    "url": "/image-synthesis-explained/static/js/main.f4603647.chunk.js"
   },
   {
     "revision": "6c56160cf8dfce8427cc",
@@ -1672,16 +1672,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/image-synthesis-explained/static/media/bg1.3fa82b1a.jpg"
   },
   {
-    "revision": "fb96fd943631be363d14bb95939cf0fa",
-    "url": "/image-synthesis-explained/static/media/bg2-half.fb96fd94.png"
+    "revision": "c907ffd0013a7f11d0fb10fc32c7a3ae",
+    "url": "/image-synthesis-explained/static/media/bg2-half-bottom.c907ffd0.jpg"
   },
   {
-    "revision": "b1b5d4b57092a5f6e649f20c9388862b",
-    "url": "/image-synthesis-explained/static/media/bg2.b1b5d4b5.jpg"
+    "revision": "1c63549f0c36ed8680435d6da8a82087",
+    "url": "/image-synthesis-explained/static/media/bg2-half.1c63549f.jpg"
   },
   {
-    "revision": "ce51cf359af662272ea74350f877d476",
-    "url": "/image-synthesis-explained/static/media/bg3.ce51cf35.png"
+    "revision": "1de719202697fedc3b9e8cf35a54c998",
+    "url": "/image-synthesis-explained/static/media/catdog-1.1de71920.png"
+  },
+  {
+    "revision": "c5293d27a32539966573d748b67ac185",
+    "url": "/image-synthesis-explained/static/media/catdog-2.c5293d27.png"
+  },
+  {
+    "revision": "d026a472fc3659589c03524476591070",
+    "url": "/image-synthesis-explained/static/media/catdog-3.d026a472.png"
+  },
+  {
+    "revision": "39efc5d5af2f9d754a9e82dec4828393",
+    "url": "/image-synthesis-explained/static/media/catdog-4.39efc5d5.png"
   },
   {
     "revision": "199d4a2efb4cbf5ad60835437417357f",

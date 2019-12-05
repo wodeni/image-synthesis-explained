@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/image-synthesis-explained/static/css/main.73ef3f6f.chunk.css",
-    "main.js": "/image-synthesis-explained/static/js/main.fec8eea0.chunk.js",
-    "main.js.map": "/image-synthesis-explained/static/js/main.fec8eea0.chunk.js.map",
+    "main.js": "/image-synthesis-explained/static/js/main.f4603647.chunk.js",
+    "main.js.map": "/image-synthesis-explained/static/js/main.f4603647.chunk.js.map",
     "runtime-main.js": "/image-synthesis-explained/static/js/runtime-main.2e18cb0c.js",
     "runtime-main.js.map": "/image-synthesis-explained/static/js/runtime-main.2e18cb0c.js.map",
     "static/css/2.55ebcf1f.chunk.css": "/image-synthesis-explained/static/css/2.55ebcf1f.chunk.css",
-    "static/js/2.ac95c73e.chunk.js": "/image-synthesis-explained/static/js/2.ac95c73e.chunk.js",
-    "static/js/2.ac95c73e.chunk.js.map": "/image-synthesis-explained/static/js/2.ac95c73e.chunk.js.map",
+    "static/js/2.257a85fd.chunk.js": "/image-synthesis-explained/static/js/2.257a85fd.chunk.js",
+    "static/js/2.257a85fd.chunk.js.map": "/image-synthesis-explained/static/js/2.257a85fd.chunk.js.map",
     "index.html": "/image-synthesis-explained/index.html",
-    "precache-manifest.345fad7c56a1dd235b545be195c41d18.js": "/image-synthesis-explained/precache-manifest.345fad7c56a1dd235b545be195c41d18.js",
+    "precache-manifest.150b36af803c9a6ca8577abbcef8fcbf.js": "/image-synthesis-explained/precache-manifest.150b36af803c9a6ca8577abbcef8fcbf.js",
     "service-worker.js": "/image-synthesis-explained/service-worker.js",
     "static/css/2.55ebcf1f.chunk.css.map": "/image-synthesis-explained/static/css/2.55ebcf1f.chunk.css.map",
     "static/css/main.73ef3f6f.chunk.css.map": "/image-synthesis-explained/static/css/main.73ef3f6f.chunk.css.map",
@@ -366,9 +366,12 @@
     "static/media/267-93.png": "/image-synthesis-explained/static/media/267-93.05025181.png",
     "static/media/katex.min.css": "/image-synthesis-explained/static/media/KaTeX_Typewriter-Regular.6cc31ea5.woff2",
     "static/media/bg1.jpg": "/image-synthesis-explained/static/media/bg1.3fa82b1a.jpg",
-    "static/media/bg2-half.png": "/image-synthesis-explained/static/media/bg2-half.fb96fd94.png",
-    "static/media/bg2.jpg": "/image-synthesis-explained/static/media/bg2.b1b5d4b5.jpg",
-    "static/media/bg3.png": "/image-synthesis-explained/static/media/bg3.ce51cf35.png",
+    "static/media/bg2-half-bottom.jpg": "/image-synthesis-explained/static/media/bg2-half-bottom.c907ffd0.jpg",
+    "static/media/bg2-half.jpg": "/image-synthesis-explained/static/media/bg2-half.1c63549f.jpg",
+    "static/media/catdog-1.png": "/image-synthesis-explained/static/media/catdog-1.1de71920.png",
+    "static/media/catdog-2.png": "/image-synthesis-explained/static/media/catdog-2.c5293d27.png",
+    "static/media/catdog-3.png": "/image-synthesis-explained/static/media/catdog-3.d026a472.png",
+    "static/media/catdog-4.png": "/image-synthesis-explained/static/media/catdog-4.39efc5d5.png",
     "static/media/diophantus.gif": "/image-synthesis-explained/static/media/diophantus.199d4a2e.gif",
     "static/media/gan-components-overlay.png": "/image-synthesis-explained/static/media/gan-components-overlay.7d9073c1.png",
     "static/media/gandalf.gif": "/image-synthesis-explained/static/media/gandalf.76cba3eb.gif",
@@ -615,8 +618,8 @@
   "entrypoints": [
     "static/js/runtime-main.2e18cb0c.js",
     "static/css/2.55ebcf1f.chunk.css",
-    "static/js/2.ac95c73e.chunk.js",
+    "static/js/2.257a85fd.chunk.js",
     "static/css/main.73ef3f6f.chunk.css",
-    "static/js/main.fec8eea0.chunk.js"
+    "static/js/main.f4603647.chunk.js"
   ]
 }
