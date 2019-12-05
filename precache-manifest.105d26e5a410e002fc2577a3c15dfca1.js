@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "15e75b54468040fe26083dd11bd3278b",
+    "revision": "8cf6a839cdf045aad60ce1e749b007c8",
     "url": "/image-synthesis-explained/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/image-synthesis-explained/static/css/2.55ebcf1f.chunk.css"
   },
   {
-    "revision": "43f5f664791238235454",
+    "revision": "c270db1787d9a984f5f7",
     "url": "/image-synthesis-explained/static/css/main.2bcc270e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/image-synthesis-explained/static/js/2.8d6dd682.chunk.js"
   },
   {
-    "revision": "43f5f664791238235454",
-    "url": "/image-synthesis-explained/static/js/main.33e0916d.chunk.js"
+    "revision": "c270db1787d9a984f5f7",
+    "url": "/image-synthesis-explained/static/js/main.f4d14ee4.chunk.js"
   },
   {
     "revision": "6c56160cf8dfce8427cc",
