@@ -1,7 +1,7 @@
 import * as React from "react";
 import bg1 from "./assets/bg1.jpg";
-import diophantus from "./assets/diophantus.png";
-import gandalf from "./assets/gandalf.png";
+import diophantus from "./assets/diophantus.gif";
+import gandalf from "./assets/gandalf.gif";
 import { TransparentBox, Cat, Dog, H1, P, Page } from "./Util";
 import { Flex, Box } from "reflexbox";
 import { Image } from "rebass";

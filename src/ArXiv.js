@@ -5,20 +5,46 @@ import { TransparentBox, Cat, Dog, H1, P, Page } from "./Util";
 import "./d3.css";
 
 function formatTimeToUnix(time) {
-  const timeFormat = d3.timeFormat("%Q");
-  const parseTime = d3.utcParse("%Y-%m-%dT%H:%M:%SZ");
-  return Number(timeFormat(parseTime(time)));
+  const parseTime = d3.utcParse("%Y-%m-%d");
+  return parseTime(time);
 }
+
+const cat_strings = {
+  "cs.SI": "Social and Information Networks",
+  "cs.CY": "Computers and Society",
+  "cs.DB": "Databases",
+  "cs.DC": "Distributed, Parallel, and Cluster Computing",
+  "cs.HC": "Human-Computer Interaction",
+  "q-bio.GN": "Genomics",
+  "q-bio.NC": "Neurons and Cognition",
+  "q-bio.BM": "Biomolecules",
+  "cs.RO": "Robotics",
+  "cs.IT": "Information Theory",
+  "cs.NI": "Networking and Internet Architecture",
+  "cs.SD": "Sound",
+  "cs.CR": "Cryptography and Security",
+  "eess.AS": "Audio and Speech Processing",
+  "cs.GR": "Graphics",
+  "cs.IR": "Information Retrieval",
+  "hep-ex": "High Energy Physics - Experiment",
+  "cs.MM": "Multimedia",
+  "cs.CL": "Computation and Language",
+  "cs.AI": "Artificial Intelligence",
+  "cs.NE": "Neural and Evolutionary Computation",
+  "cs.CV": "Computer Vision and Pattern Recognition",
+  "cs.LG": "CS.Machine Learning",
+  "stat.ML": "STAT.Machine Learning"
+};
 
 export default class ArXiv extends React.Component {
   componentDidMount() {
-    const data = require("./data/arxiv-data-cleaned.json");
+    const data = require("./data/gans.json");
     this.chart(data);
   }
-  chart(arxivData) {
+  chart(gansData) {
     const width = 960;
     const height = 400;
-    const margin = { top: 10, bottom: 30, left: 10, right: 10 };
+    const margin = { top: 10, bottom: 80, left: 10, right: 250 };
 
     const svg = d3
       .select(this.refs.canvas)
@@ -35,19 +61,20 @@ export default class ArXiv extends React.Component {
         `translate(${width - margin.right + 10}, ${margin.top})`
       );
 
-    let categorys = [];
+    let categories = [];
 
-    arxivData.forEach(function(data) {
+    gansData.forEach(function(data) {
       const term = data.category.term;
-      !categorys.includes(term) && categorys.push(term);
+      data.date = `${data.year}-${data.month}-${data.day}`;
+      !categories.includes(term) && categories.push(term);
     });
 
-    categorys.reverse();
-    const categoryLen = categorys.length;
+    categories.reverse();
+    const categoryLen = categories.length;
 
     const colorsXscale = d3
       .scaleOrdinal()
-      .domain(categorys)
+      .domain(categories)
       .range(d3.range(0, 1, 1 / categoryLen));
     const colors = d => d3.interpolateRainbow(colorsXscale(d));
 
@@ -55,20 +82,25 @@ export default class ArXiv extends React.Component {
     const xScale = d3
       .scaleLinear()
       .domain(
-        d3.extent(arxivData, function(d) {
-          return formatTimeToUnix(d.published);
+        d3.extent(gansData, function(d) {
+          return formatTimeToUnix(d.date);
         })
       )
       .range([0, xHeight]);
     const xAxis = g =>
       g
         .attr("transform", `translate(0, ${height - margin.bottom})`)
-        .call(d3.axisBottom(xScale).tickFormat(d3.timeFormat("%Y-%m")));
+        .call(d3.axisBottom(xScale).tickFormat(d3.timeFormat("%Y-%m")))
+        .selectAll("text")
+        .style("text-anchor", "end")
+        .attr("dx", "-.8em")
+        .attr("dy", ".15em")
+        .attr("transform", "rotate(-65)");
 
     const yHeight = height - margin.bottom;
     const yScale = d3
       .scaleOrdinal()
-      .domain(categorys)
+      .domain(categories)
       .range(d3.range(0, yHeight, yHeight / categoryLen));
     const yAxis = g => g.call(d3.axisLeft(yScale));
 
@@ -80,19 +112,18 @@ export default class ArXiv extends React.Component {
       .call(yAxis);
 
     const tooltip = d3
-      .select(this.refs.canvas)
+      .select("body")
       .append("div")
       .attr("class", "tooltip")
       .style("display", "none");
 
     chartSvg
       .selectAll("circle")
-      .data(arxivData)
+      .data(gansData)
       .enter()
       .append("circle")
-      .style("cursor", "pointer")
       .attr("cx", function(d) {
-        return xScale(formatTimeToUnix(d.published));
+        return xScale(formatTimeToUnix(d.date));
       })
       .attr("cy", function(d) {
         return yScale(d.category.term);
@@ -101,15 +132,17 @@ export default class ArXiv extends React.Component {
       .attr("fill", function(d, i) {
         return colors(d.category.term);
       })
+      .on("click", function(d, i) {
+        window.open(d.arxiv);
+      })
       .on("mouseover", function(d) {
         d3.select(this).attr("r", 10);
 
         const html = `<p><span>Title:</span> ${d.title}</p>
-                <p><span>Authors:</span> ${d.authors.join(",")}</p>
-                <p><span>Published:</span> ${d3.timeFormat("%Y-%m-%d %H:%M:%S")(
-                  formatTimeToUnix(d.published)
-                )}</p>
-                `;
+          <p><span>Authors:</span> ${d.authors.join(",")}</p>
+          <p><span>Published:</span> ${d3.timeFormat("%Y-%m-%d")(
+            formatTimeToUnix(d.date)
+          )}</p>`;
         tooltip.html(html);
         tooltip
           .style("left", `${d3.event.pageX + 10}px`)
@@ -124,7 +157,7 @@ export default class ArXiv extends React.Component {
 
     const categoryG = categorysSvg
       .selectAll("g")
-      .data(categorys)
+      .data(categories.map(c => cat_strings[c]))
       .enter()
       .append("g");
 
@@ -143,22 +176,29 @@ export default class ArXiv extends React.Component {
       .attr("fill", function(d) {
         return colors(d);
       })
-      .style("cursor", "pointer")
-      .on("mouseover", function(d) {
-        tooltip.html(d);
-        tooltip
-          .style("left", `${d3.event.pageX + 10}px`)
-          .style("top", `${d3.event.pageY + 10}px`)
-          .style("display", "block");
+      .style("cursor", "pointer");
+
+    categoryG
+      .append("text")
+      .attr("x", function(d, i) {
+        return 15;
       })
-      .on("mouseout", function(d) {
-        tooltip.style("display", "none");
-      });
+      .attr("y", function(d, i) {
+        return (yHeight / categoryLen) * (i + 1);
+      })
+      .text(function(d) {
+        return d;
+      })
+      .attr("fill", "black")
+      .attr("font-size", 10);
+    //   .attr("font-family", "Open Sans");
   }
   render() {
     return (
       <Page bg="white" className="section">
-        <h1 align="center">People are synthesizing more images!</h1>
+        <H1 textAlign="center" color="primary">
+          People are synthesizing more images!
+        </H1>
         <Flex justifyContent="center">
           <Box m={5} width={2 / 3} ref="canvas"></Box>
         </Flex>

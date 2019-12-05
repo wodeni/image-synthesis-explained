@@ -1,8 +1,36 @@
 import * as React from "react";
-import { Box, Page, Cat, Dog } from "./Util";
+import { H1, Box, Page, Cat, Dog } from "./Util";
+import story1 from "./assets/story1.jpg";
+import story2 from "./assets/story2.jpg";
+import { Flex } from "reflexbox";
+import { Image } from "rebass";
+import Emoji from "react-emoji-render";
 
 export default () => (
   <Page bg="background" className="section">
+    <H1 mb={4} textAlign="center" color="primary" fontSize={6}>
+      It's Halloween <Emoji text=":jack_o_lantern:"></Emoji>!
+    </H1>
+    <Flex justifyContent="center">
+      <Image
+        width={1 / 2}
+        mx={3}
+        mb={3}
+        src={story1}
+        sx={{
+          borderRadius: 10
+        }}
+      ></Image>
+      <Image
+        width={1 / 2}
+        mx={3}
+        mb={3}
+        src={story2}
+        sx={{
+          borderRadius: 10
+        }}
+      ></Image>
+    </Flex>
     <Box
       fontSize={4}
       fontFamily="story"

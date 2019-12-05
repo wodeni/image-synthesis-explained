@@ -1,6 +1,7 @@
 import Emoji from "react-emoji-render";
 import React from "react";
 import {
+  position,
   typography,
   border,
   background,
@@ -24,10 +25,12 @@ export const Box = styled("div")(
 export const Grid = styled("Box")(grid);
 export const Video = styled("video")(layout);
 export const P = styled("p")(typography, space, color, flexbox);
-export const H1 = styled("h1")(typography, space, color, flexbox);
+export const H1 = styled("h1")(typography, space, color, flexbox, layout);
 export const Page = styled.div`
   ${color}
   ${background}
+  ${layout}
+  ${position}
 `;
 export const TransparentBox = ({ ...props }) => (
   <Box {...props} borderRadius="3" boxShadow="0 2px 4px rgba(0, 0, 0, .125)" />

@@ -12,6 +12,7 @@ import Network from "./Network";
 import Characters from "./Characters";
 import Components from "./Components";
 import MathFoundation from "./MathFoundation";
+import DogGen from "./DogGen";
 
 const Math = () => (
   <P fontFamily="body" mb={[4, 5]} m={3}>
@@ -53,6 +54,7 @@ class App extends React.Component {
                   <Components />
                   <MathFoundation />
                   <ArXiv />
+                  <DogGen />
                   <Latent />
                 </ThemeProvider>
               </div>

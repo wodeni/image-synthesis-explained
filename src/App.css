@@ -1,6 +1,12 @@
 #fp-nav ul li a span {
-  background: #609;
+  background: #609 !important;
 }
 .fp-viewing-0 #fp-nav ul li a span {
-  background: white;
+  background: white !important;
+}
+.fp-viewing-1 #fp-nav ul li a span {
+  background: white !important;
+}
+#latentOverlay {
+  border-radius: 20px;
 }

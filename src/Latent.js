@@ -1,83 +1,94 @@
 import * as React from "react";
 import { Page, P, Chip } from "./Util";
 import bg2 from "./assets/bg2.jpg";
-import dog from "./assets/dog.png";
+import bg3 from "./assets/bg3.png";
 import { Flex, Box } from "@rebass/grid";
 import { Label, Select } from "@rebass/forms";
 import { Image } from "rebass";
 import Slider, { createSliderWithTooltip } from "rc-slider";
 import "rc-slider/assets/index.css";
+import catClasses from "./data/catClasses.json";
+import dogClasses from "./data/dogClasses-small.json";
+import Tooltip from "rc-tooltip";
+import "rc-slider/assets/index.css";
+import "rc-tooltip/assets/bootstrap.css";
 
 const SliderWithTooltip = createSliderWithTooltip(Slider);
-
-const dogClasses = {
-  Chihuahua: 151,
-  "Shih-Tzu": 155,
-  "Golden retriever": 207,
-  "Border collie": 232,
-  "Pembroke Weish corgi": 263
-};
+const Handle = Slider.Handle;
 
 export default class Latent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       weight: 0.5,
-      dogClass1: "Chihuahua",
-      dogClass2: "Border collie"
+      catClass: "Tiger cat",
+      dogClass: "Border collie"
     };
   }
   getLerpImage() {
-    const { dogClass1, dogClass2, weight } = this.state;
-    const [d1, d2] = [dogClass1, dogClass2].map(x => dogClasses[x]);
-    const img = require(`./assets/lerp/lerp-${d1}-${d2}-${weight}.png`);
+    const { catClass: catClass, dogClass: dogClass, weight } = this.state;
+    const [c, d] = [catClasses[catClass], dogClasses[dogClass]];
+    const img = require(`./assets/lerp/lerp-${d}-${c}-${weight}.png`);
     return img;
   }
-  getDogImage(cls) {
+  getImage(cls) {
     const img = require(`./assets/lerp/lerp-${cls}.png`);
     return img;
   }
 
   render() {
-    const DogSelect = props => (
-      <Box mx={1}>
-        <Chip>{props.label}</Chip>
-        <P color="text">Choose the dog category</P>
-        <Select
-          name="Dog Category"
-          value={props.value}
-          onChange={props.onChange}
-          bg="secondary"
-          sx={{ color: "primary" }}
+    const handle = props => {
+      const { value, dragging, index, ...restProps } = props;
+      return (
+        <Tooltip
+          prefixCls="rc-slider-tooltip"
+          overlay={value}
+          visible={true}
+          placement="bottom"
+          key={index}
         >
-          {props.options}
-        </Select>
-      </Box>
-    );
+          <Handle value={value} {...restProps} />
+        </Tooltip>
+      );
+    };
     return (
       <Page className="section" backgroundImage={`url(${bg2})`}>
-        <Box bg="overlay" textAlign="center" mx={5} borderRadius={3} p={3}>
+        <Box
+          id="latentOverlay"
+          bg="#cdb7ddff"
+          textAlign="center"
+          mx={5}
+          p={3}
+          borderRadius={4}
+        >
           <Flex flexWrap="wrap">
             <Box width={1 / 3}>
               <Box mx={2}>
-                <DogSelect
-                  label="Dog category 1"
-                  value={this.state.dogClass1}
-                  onChange={e => {
-                    this.setState({ dogClass1: e.target.value });
-                  }}
-                  options={Object.entries(dogClasses).map(([name, index]) => {
-                    if (name !== this.state.dogClass2)
+                <Box mx={1}>
+                  <Chip>Cat category</Chip>
+                  <P color="primary">Choose the cat category</P>
+                  <Select
+                    value={this.state.catClass}
+                    bg="secondary"
+                    color="#609"
+                    sx={{ color: "primary" }}
+                    onChange={e => {
+                      this.setState({ catClass: e.target.value });
+                    }}
+                  >
+                    {Object.entries(catClasses).map(([name, index]) => {
                       return <option key={index}>{name}</option>;
-                  })}
-                />
+                    })}
+                  </Select>
+                </Box>
               </Box>
               <Box my={3} width={1}>
                 <Image
-                  src={this.getDogImage(dogClasses[this.state.dogClass1])}
+                  src={this.getImage(catClasses[this.state.catClass])}
                   sx={{
+                    border: "5px solid #609",
                     width: ["100%", "50%"],
-                    borderRadius: 8
+                    borderRadius: 9999
                   }}
                 ></Image>
               </Box>
@@ -89,24 +100,32 @@ export default class Latent extends React.Component {
                   src={this.getLerpImage()}
                   sx={{
                     width: ["100%", "50%"],
-                    borderRadius: 8
+                    border: "5px solid #609",
+                    borderRadius: 9999
                   }}
                 ></Image>
               </Box>
               <Box p={3}>
                 <SliderWithTooltip
-                  railStyle={{ backgroundColor: "#306", height: 5 }}
-                  trackStyle={{ backgroundColor: "#306", height: 5 }}
+                  railStyle={{
+                    backgroundColor: "rgba(149, 20, 199, 0.8)",
+                    height: 5
+                  }}
+                  trackStyle={{
+                    backgroundColor: "rgba(149, 20, 199, 0.8)",
+                    height: 5
+                  }}
                   handleStyle={{
-                    borderColor: "blue",
+                    borderColor: "rgba(149, 20, 199, 0.8)",
+                    border: "0px",
                     height: 28,
                     width: 28,
                     marginTop: -14,
-                    backgroundColor: "black"
+                    backgroundColor: "rgba(149, 20, 199, 1.0)"
                   }}
                   step={0.2}
-                  reverse
                   defaultValue={0.5}
+                  handle={handle}
                   min={0.1}
                   max={0.9}
                   tipFormatter={value => `Weight: ${value}`}
@@ -117,24 +136,29 @@ export default class Latent extends React.Component {
             </Box>
 
             <Box width={[1 / 3]}>
-              <DogSelect
-                label="Dog category 2"
-                value={this.state.dogClass2}
-                onChange={e => {
-                  console.log(e.target.value);
-                  this.setState({ dogClass2: e.target.value });
-                }}
-                options={Object.entries(dogClasses).map(([name, index]) => {
-                  if (name !== this.state.dogClass1)
+              <Box mx={1}>
+                <Chip>Dog category</Chip>
+                <P color="primary">Choose the dog category</P>
+                <Select
+                  value={this.state.dogClass}
+                  bg="secondary"
+                  color="#609"
+                  onChange={e => {
+                    this.setState({ dogClass: e.target.value });
+                  }}
+                >
+                  {Object.entries(dogClasses).map(([name, index]) => {
                     return <option key={index}>{name}</option>;
-                })}
-              />
+                  })}
+                </Select>
+              </Box>
               <Box my={3} width={1}>
                 <Image
-                  src={this.getDogImage(dogClasses[this.state.dogClass2])}
+                  src={this.getImage(dogClasses[this.state.dogClass])}
                   sx={{
                     width: ["100%", "50%"],
-                    borderRadius: 8
+                    border: "5px solid #609",
+                    borderRadius: 9999
                   }}
                 ></Image>
               </Box>
