@@ -54,7 +54,7 @@ class App extends React.Component {
                   <GanIntro />
                   <Network />
                   <Components />
-                  {/* <MathFoundation /> */}
+
                   <ArXiv />
                   <DogGen />
                   <Latent />

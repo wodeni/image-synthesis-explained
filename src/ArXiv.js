@@ -3,6 +3,7 @@ import { Box, Flex } from "reflexbox";
 import * as d3 from "d3";
 import { TransparentBox, Cat, Dog, H1, P, Page } from "./Util";
 import "./d3.css";
+import Emoji from "react-emoji-render";
 
 function formatTimeToUnix(time) {
   const parseTime = d3.utcParse("%Y-%m-%d");
@@ -44,7 +45,7 @@ export default class ArXiv extends React.Component {
   chart(gansData) {
     const width = 960;
     const height = 400;
-    const margin = { top: 10, bottom: 80, left: 10, right: 250 };
+    const margin = { top: 3, bottom: 50, left: 10, right: 250 };
 
     const svg = d3
       .select(this.refs.canvas)
@@ -197,12 +198,16 @@ export default class ArXiv extends React.Component {
     return (
       <Page bg="white" className="section">
         <H1 textAlign="center" color="primary">
-          A bit of history...
+          A Bit of GAN Development History <Emoji text=":book:"></Emoji>  ...
         </H1>
         <Flex justifyContent="center">
-          <Box m={5} width={2 / 3} ref="canvas"></Box>
+          <Box m={2} width={4 / 5} ref="canvas"></Box>
         </Flex>
-      </Page>
+        <P m={4}  color="primary" fontSize={3}>
+        Ian Goodfellow is recognized <star /> by several sources as having invented GANs in 2014. This paper included the first working implementation of a generative model based on adversarial networks.
+        From then on, more and more researchers in the field of ML / CV are expanding and improving the work of GAN, and researchers from broader domains are also coming into this GAN playground. In a 2016 seminar, Yann LeCun described GANs as "the coolest idea in machine learning in the last twenty years".
+    </P>
+    </Page>
     );
   }
 }
