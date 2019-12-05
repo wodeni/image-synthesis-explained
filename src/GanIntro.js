@@ -22,15 +22,18 @@ export default () => (
     </Box>
     <Box mt={5} position="bottom">
       <P fontSize={4} color="primary" mx={5}>
-        At the beginning, the dog-looking cat is easily identified by the
-        Diophantus, and the Gandalf need to improve the dog-look magic to make
-        the cat looks more like a dog. After many many rounds of making dog look
-        and identify fake dog, finally a dog-look cat get passed by the
-        Diophantus.
+        At the beginning, <Cat /> is easily identified by Diophantus, and
+        Gandalf needs to improve his magical ability to make the her looks more
+        like a <Dog />. After many many rounds of foing so, finally a <Dog />
+        -look gets passed by the Diophantus.
         <br />
         <br />
-        That’s actually how GAN (Generative Adversarial Networks) works.{" "}
-        <strong>G</strong>andalf is the{" "}
+        In a very general sense, the <Cat />
+        's story is very similar to a typical image synthesis task in our
+        non-magical world. The Halloweean party set-up in fact resembles how
+        <strong>Generative Adversarial Networks (GAN)</strong> work, where{" "}
+        <strong>G</strong>
+        andalf is the{" "}
         <i>
           <strong>G</strong>enerative Network
         </i>{" "}
@@ -38,9 +41,9 @@ export default () => (
         <i>
           <strong>D</strong>iscriminative Network
         </i>
-        . And the final dog-look cat who get passed is the output of GAN. The
-        generative network generates candidates and discriminative network
-        evaluates them.
+        . And the final <Dog />
+        -looking <Cat /> who get passed is the output of GAN. The generative
+        network generates candidates and discriminative network evaluates them.
       </P>
     </Box>
   </Page>

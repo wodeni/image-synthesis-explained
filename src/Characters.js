@@ -27,8 +27,8 @@ export default () => (
           >
             <Image src={gandalf} height={300} />
             <P mx={3}>
-              Gandalf can magically create fake looks for animals, for example,
-              turning <Cat /> to <Dog />.
+              <strong>Gandalf</strong> can magically create fake looks for
+              animals, for example, turning <Cat /> to <Dog />.
             </P>
           </Box>
           <Box
@@ -41,9 +41,9 @@ export default () => (
           >
             <Image src={diophantus} height={300} />
             <P mx={3}>
-              Diophantus has a very knowledgable <Emoji text=":mag_right:" />{" "}
-              that has seen many animals and remembered how they look like over
-              the years.
+              <strong>Diophantus</strong> has a very knowledgable{" "}
+              <Emoji text=":mag_right:" /> that has seen many animals and
+              remembered how they look like over the years.
             </P>
           </Box>
         </Flex>

@@ -15,7 +15,7 @@ export default class LatentViz extends React.Component {
 
   chart(ref, data, useImage) {
     // set the dimensions and margins of the graph
-    var margin = { top: 10, right: 30, bottom: 30, left: 60 },
+    var margin = { top: 60, right: 60, bottom: 90, left: 60 },
       width = 460 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
@@ -45,7 +45,7 @@ export default class LatentViz extends React.Component {
       // Add X axis
       var x = d3
         .scaleLinear()
-        .domain([-2.5, 2.5])
+        .domain([-1.8, 1.8])
         .range([0, width]);
       svg
         .append("g")
@@ -56,7 +56,7 @@ export default class LatentViz extends React.Component {
       // Add Y axis
       var y = d3
         .scaleLinear()
-        .domain([-2.5, 2.5])
+        .domain([-1.8, 1.8])
         .range([height, 0]);
       svg
         .append("g")
@@ -121,14 +121,29 @@ export default class LatentViz extends React.Component {
   render() {
     return (
       <Page bg="primary" className="section">
-        {/* <H1 textAlign="center" color="primary">
-          A Bit of GAN Development History <Emoji text=":book:"></Emoji> ...
-        </H1> */}
-        <P m={4} color="primary" fontSize={3}>
-          TODO
-        </P>
         <Flex justifyContent="center">
-          <Box m={2} width={1 / 2} ref="canvas"></Box>
+          <Box width={1 / 3} mx={5} p={2}>
+            <P fontSize={5} color="text" fontWeight="bold">
+              How does a GAN come up with these images/
+              <Dog />
+              s? Intuitively, it learns about the <i>space</i> of possible
+              images and pick values from there.
+              <br />
+              What does the space look like? We can't really directly look and
+              understand it like Gandalf does, but here is a sneak peak
+              <Emoji text=":arrow_right:"></Emoji>
+            </P>
+            <P fontSize={3} color="text" fontWeight="light">
+              This "hidden" space of images is the <i>latent space</i>. Popular
+              GAN models like BIGGAN have very high-dimensional latent spaces.
+              In this example, we use Principle Component Analysis to{" "}
+              <i>project</i> samples of Peke dogs, which are vectors in an
+              128-dimensional space, onto a 2D plane, while preserving the
+              spatial relationships as much as possible. Do the neighbors look
+              alike? In what way?
+            </P>
+          </Box>
+          {/* <Box m={2} width={1 / 2} ref="canvas"></Box> */}
           <Box m={2} width={1 / 2} ref="canvas2"></Box>
         </Flex>
       </Page>

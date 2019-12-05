@@ -13,6 +13,7 @@ export default {
   heights: [16, 32, 64, 128, 256],
   maxWidths: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
   fontWeights: {
+    light: 250,
     body: 400,
     heading: 900,
     bold: 700
@@ -87,7 +88,7 @@ export default {
       lineHeight: "body"
     },
     a: {
-      color: "primary"
+      color: "text"
     },
     pre: {
       fontFamily: "monospace",
