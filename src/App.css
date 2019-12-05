@@ -7,6 +7,25 @@
 .fp-viewing-1 #fp-nav ul li a span {
   background: white !important;
 }
+
+fp-controlArrow fp-next {
+  /* -webkit-tap-highlight-color: #609 !important;
+  border-color: #609 !important; */
+  color: #609 !important;
+}
+
 #latentOverlay {
   border-radius: 20px;
+}
+
+.axis line {
+  stroke: white;
+}
+
+.axis path {
+  stroke: white;
+}
+
+.axis text {
+  fill: white;
 }

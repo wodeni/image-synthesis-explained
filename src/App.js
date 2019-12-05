@@ -7,6 +7,7 @@ import theme from "./theme";
 import { Landing } from "./Landing";
 import Story from "./Story";
 import Latent from "./Latent";
+import LatentViz from "./LatentViz";
 import ArXiv from "./ArXiv";
 import Network from "./Network";
 import Characters from "./Characters";
@@ -54,10 +55,10 @@ class App extends React.Component {
                   <GanIntro />
                   <Network />
                   <Components />
-
                   <ArXiv />
                   <DogGen />
                   <Latent />
+                  <LatentViz />
                 </ThemeProvider>
               </div>
             );
