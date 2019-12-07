@@ -129,7 +129,7 @@ export default class LatentViz extends React.Component {
             <P fontSize={3} color="text" fontWeight="light">
               This "hidden" space of images is the <i>latent space</i>. Popular
               GAN models like BIGGAN have very high-dimensional latent spaces.
-              In this example, we use Principle Component Analysis to{" "}
+              In this example, we use Principal Component Analysis to{" "}
               <i>project</i> samples of Maltese dogs, which are vectors in an
               128-dimensional space, onto a 2D plane, while preserving the
               spatial relationships as much as possible. Do the neighbors look
