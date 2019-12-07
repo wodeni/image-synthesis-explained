@@ -25,6 +25,7 @@ The project is built using [React](https://reactjs.org/) and [Styled System](htt
 * Many of the arts are in raster formats, which causes some performance problems. Use more vector arts will probably mitigate this.
 * We wanted to go into far more details about the inner-workings of GANs but didn't end up doing as much as we hoped. 
 * Currently, all the GAN outputs are cached as image files. We explored porting models like BIGGAN to the web using [TensorFlow.js](https://www.tensorflow.org/js) but weren't able to get it to work well. 
+* As the name of the project suggests, we wanted to explore far more techniques for realistic image synthesis.
 
 # Authors
 
