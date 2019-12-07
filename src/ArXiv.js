@@ -1,11 +1,9 @@
 import * as React from "react";
 import { Box, Flex } from "reflexbox";
 import * as d3 from "d3";
-import { TransparentBox, Cat, Dog, H1, P, Page } from "./Util";
+import { H1, P, Page } from "./Util";
 import "./d3.css";
-import { Image } from "rebass";
 import Emoji from "react-emoji-render";
-import meme from "./assets/ian-meme.png";
 
 function formatTimeToUnix(time) {
   const parseTime = d3.utcParse("%Y-%m-%d");

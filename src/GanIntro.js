@@ -1,11 +1,7 @@
 import * as React from "react";
-import bg1 from "./assets/bg1.jpg";
-import diophantus from "./assets/diophantus.gif";
-import gandalf from "./assets/gandalf.gif";
-import { TransparentBox, Cat, Dog, H1, P, Page } from "./Util";
-import { Flex, Box } from "reflexbox";
+import { Cat, Dog, P, Page } from "./Util";
+import { Box } from "reflexbox";
 import { Image } from "rebass";
-import Emoji from "react-emoji-render";
 import catdog1 from "./assets/catdog-1.png";
 import catdog2 from "./assets/catdog-2.png";
 import catdog3 from "./assets/catdog-3.png";

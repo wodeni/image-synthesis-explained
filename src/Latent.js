@@ -2,7 +2,7 @@ import * as React from "react";
 import { Page, P, Chip, Cat, Dog } from "./Util";
 import bg2 from "./assets/bg2-half-bottom.jpg";
 import { Flex, Box } from "@rebass/grid";
-import { Label, Select } from "@rebass/forms";
+import { Select } from "@rebass/forms";
 import { Image } from "rebass";
 import Slider, { createSliderWithTooltip } from "rc-slider";
 import "rc-slider/assets/index.css";
@@ -12,7 +12,7 @@ import Tooltip from "rc-tooltip";
 import Emoji from "react-emoji-render";
 import "rc-slider/assets/index.css";
 import "rc-tooltip/assets/bootstrap.css";
-import { InlineMath, BlockMath } from "react-katex";
+import { InlineMath } from "react-katex";
 import "katex/dist/katex.min.css";
 
 const SliderWithTooltip = createSliderWithTooltip(Slider);
@@ -28,7 +28,7 @@ export default class Latent extends React.Component {
     };
   }
   getLerpImage() {
-    const { catClass: catClass, dogClass: dogClass, weight } = this.state;
+    const { catClass, dogClass, weight } = this.state;
     const [c, d] = [catClasses[catClass], dogClasses[dogClass]];
     const img = require(`./assets/lerp/lerp-${d}-${c}-${weight}.png`);
     return img;

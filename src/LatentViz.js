@@ -1,9 +1,8 @@
 import * as React from "react";
 import { Box, Flex } from "reflexbox";
 import * as d3 from "d3";
-import { TransparentBox, Cat, Dog, H1, P, Page } from "./Util";
+import { Dog, P, Page } from "./Util";
 import "./d3.css";
-import { Image } from "rebass";
 import Emoji from "react-emoji-render";
 
 export default class LatentViz extends React.Component {
@@ -62,12 +61,6 @@ export default class LatentViz extends React.Component {
         .append("g")
         .call(d3.axisLeft(y))
         .attr("class", "axis");
-
-      const tooltip = d3
-        .select("body")
-        .append("div")
-        .attr("class", "tooltip")
-        .style("display", "none");
 
       // Add dots
       if (useImage) {
