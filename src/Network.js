@@ -1,6 +1,6 @@
 import * as React from "react";
 import { P, Page, Box, Video } from "./Util";
-import story from "./assets/story.mp4";
+import story from "./assets/story-min.mp4";
 import overlay from "./assets/gan-components-overlay.png";
 import { Image } from "rebass";
 import Emoji from "react-emoji-render";
@@ -40,7 +40,7 @@ export default class extends React.Component {
           </Box>
           <Image
             bg="rgba(0.2, 0.2, 0.2, 0.5)"
-            width="80%"
+            width="70%"
             src={overlay}
             sx={{
               position: "absolute",
@@ -48,7 +48,7 @@ export default class extends React.Component {
             }}
           ></Image>
           <Video
-            width="80%"
+            width="70%"
             data-autoplay
             loop
             onMouseEnter={this.handleMouseHover}
