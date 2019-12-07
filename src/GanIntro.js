@@ -26,7 +26,7 @@ export default () => (
         <br />
         In a very general sense, the <Cat />
         's story is very similar to a typical image synthesis task in our
-        non-magical world. The Halloweean party set-up in fact resembles how
+        non-magical world. The Halloweean party set-up in fact resembles how{" "}
         <strong>Generative Adversarial Networks (GAN)</strong> work, where{" "}
         <strong>G</strong>
         andalf is the{" "}
