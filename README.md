@@ -33,3 +33,7 @@ The project is built using [React](https://reactjs.org/) and [Styled System](htt
 * [Jingya Chen](https://www.jingyachen.net/) (jingyach@andrew.cmu.edu)
 
 This project is a part of the final project for the Data Visualization course at Carnegie Mellon University in Fall 2019, taught by [Adam Perer](http://perer.org/). We had a great time in the class and while doing this project. If you're at CMU, we highly recommend taking the class :wink:.
+
+# Screencast
+
+[Link here](https://youtu.be/rxUccz2g5Rk)
