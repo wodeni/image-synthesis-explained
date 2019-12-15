@@ -1,7 +1,7 @@
 # A visual introduction to realistic image synthesis
 
 <p align="center">
-    <img src="src/assets/generator.jpg" width="70%"/>>
+    <img src="src/assets/generator.jpg" width="70%"/>
 </p>
 
 This is an explainable of Generative Adversarial Networks (GAN). We introduced the concept via story-telling and interactive widgets (and lots of cute :smiley_cat: and :dog:!). Check it out [here](http://wodenimoni.com/image-synthesis-explained/).
