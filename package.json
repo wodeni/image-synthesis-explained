@@ -9,7 +9,7 @@
     "@rebass/grid": "^6.1.0",
     "d3": "^5.14.2",
     "gh-pages": "^2.1.1",
-    "katex": "^0.11.1",
+    "katex": "^0.16.10",
     "rc-slider": "^8.7.1",
     "rc-tooltip": "^4.0.0-alpha.3",
     "react": "^16.12.0",
